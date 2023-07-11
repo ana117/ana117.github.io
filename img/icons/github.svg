@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>Github</title>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<g id="Background">
+		<path id="Path 0" class="s0" d="m216 52v4h-32v8h-16v8h-16v8h-16v8h-8v8h-8v8h-8v8h-8v8h-8v8h-8v8h-8v16h-8v16h-8v16h-8v32h-8v80h8v32h8v16h8v16h8v16h8v8h8v8h8v8h8v8h8v8h8v8h8v8h16v8h16v8h16v8h24v-72h-16v8h-40v-8h-16v-8h-16v-16h-16v-16h-16v-16h32v16h16v16h16v8h40v-8h16v-8h8v-8h8v-16h-32v-8h-16v-8h-16v-8h-16v-16h-16v-16h-8v-80h8v-16h8v-16h-8v-48h48v8h8v8h24v-8h96v8h24v-8h8v-8h48v48h-8v16h8v16h8v80h-8v16h-16v16h-16v8h-16v8h-16v8h-32v16h8v8h8v8h8v96h16v-8h16v-8h16v-8h16v-8h8v-8h8v-8h8v-8h8v-8h8v-8h8v-8h8v-16h8v-16h8v-16h8v-32h8v-80h-8v-32h-8v-16h-8v-16h-8v-16h-8v-8h-8v-8h-8v-8h-8v-8h-8v-8h-8v-8h-8v-8h-16v-8h-16v-8h-16v-8h-32v-8h-80z"/>
+		<path id="Path 1" class="s1" d="m128 136v24h8v16h-8v16h-8v80h8v16h16v16h16v8h16v8h16v8h32v16h-8v8h-8v8h-16v8h-40v-8h-16v-16h-16v-16h-32v16h16v16h16v16h16v8h16v8h40v-8h16v72h8v8h80v-8h16v-96h-8v-8h-8v-8h-8v-16h32v-8h16v-8h16v-8h16v-16h16v-16h8v-80h-8v-16h-8v-16h8v-48h-48v8h-8v8h-24v-8h-96v8h-24v-8h-8v-8h-48z"/>
+	</g>
+</svg>
