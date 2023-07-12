@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+
+    <title>ana117</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#733B56',
+                        secondary: '#3B242C',
+                        accent: '#3C2434',
+                        text: '#1E200E',
+                        bg: '#F8F9F1',
+                    },
+                    animation: {
+                        bounce: 'bounce 1.5s infinite',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bg h-screen flex flex-col">
+
+<nav class="flex items-center bg-white px-[4rem] py-[1rem] sticky top-0">
+    <a href="/" class="text-primary font-bold text-4xl lg:text-2xl">
+        <img src="img/icons/logo.svg" alt="logo" class="w-[6rem] lg:w-[3rem]">
+    </a>
+    <div class="ml-auto flex gap-[4rem] text-primary font-bold text-4xl lg:text-2xl">
+        <a href="#" class="hover:underline decoration-accent">Projects</a>
+        <a href="#" class="hover:underline decoration-accent">Contact</a>
+    </div>
+</nav>
+
+<section class="grow py-[4rem] bg-bg text-center text-text font-bold text-3xl">
+    In Construction!
+</section>
+
+<footer class="py-[2rem] bg-secondary text-center">
+    <p class="text-bg font-semibold text-3xl lg:text-lg">
+        © 2023 Ahmad Naufan
+    </p>
+</footer>
+
+</body>
+</html>
