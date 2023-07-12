@@ -30,35 +30,35 @@
 
 <section id="hero" class="flex flex-col justify-center items-center h-screen bg-secondary py-[4rem]">
     <div class="flex justify-center items-center grow w-full">
-        <img src="img/icons/logo_outer_invert.svg" alt="hero" class="w-full">
-        <p class="absolute font-bold text-8xl text-center text-bg">
-            <span class="text-6xl">Greetings Human,</span> <br>
+        <img src="img/icons/logo_outer_invert.svg" alt="hero" class="w-full lg:h-[40rem]">
+        <p class="absolute font-bold text-8xl lg:text-6xl text-center text-bg">
+            <span class="text-6xl lg:text-4xl">Greetings Human,</span> <br>
             I'm Naufan
         </p>
     </div>
-    <img src="img/icons/down_arrow.svg" alt="hero" class="w-[12rem] grow-0 animate-bounce">
+    <img src="img/icons/down_arrow.svg" alt="hero" class="w-[12rem] lg:w-[4rem] grow-0 animate-bounce">
 </section>
 
 <nav class="flex items-center bg-white px-[4rem] py-[1rem] sticky top-0">
-    <img src="img/icons/logo.svg" alt="logo" class="w-[6rem]">
-    <div class="ml-auto flex gap-[4rem]">
-        <a href="#" class="text-primary font-bold text-4xl">Projects</a>
-        <a href="#" class="text-primary font-bold text-4xl">Contact</a>
+    <img src="img/icons/logo.svg" alt="logo" class="w-[6rem] lg:w-[3rem]">
+    <div class="ml-auto flex gap-[4rem] text-primary font-bold text-4xl lg:text-2xl">
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
     </div>
 </nav>
 
 <section class="px-[4rem] py-[2rem] divide-y-4 divide-accent">
     <header class="flex items-center justify-between">
-        <h1 class="text-5xl text-text font-bold py-[1rem]">Projects</h1>
-        <a href="#" class="text-text italic text-3xl">View All <span class="text-5xl">&#8594;</span></a>
+        <h1 class="text-text font-bold text-5xl lg:text-3xl py-[1rem]">Projects</h1>
+        <a href="#" class="text-text italic text-3xl lg:text-2xl">View All <span class="text-5xl lg:text-3xl">&#8594;</span></a>
     </header>
 
     <div class="flex flex-col gap-y-[4rem] pt-[2rem] w-full">
-        <div class="flex w-full gap-[2rem]">
-            <img src="img/imdifoods/imdifoods-mobile.png" alt="imdifoods" class="w-6/12"/>
-            <div class="w-6/12 flex flex-col justify-center">
-                <h2 class="text-4xl text-text font-bold">Imdifoods</h2>
-                <p class="text-3xl text-text mt-[1rem]">
+        <div class="flex w-full gap-[2rem] lg:gap-[0.5rem]">
+            <img src="img/imdifoods/imdifoods-mobile.png" alt="imdifoods" class="w-6/12 lg:max-h-[32rem] object-contain"/>
+            <div class="w-6/12 flex flex-col justify-center lg:justify-start">
+                <h2 class="text-text font-bold text-4xl lg:text-3xl">Imdifoods</h2>
+                <p class="text-text text-3xl lg:text-2xl mt-[1rem]">
                     E-commerce website for a food business in Indonesia
                 </p>
                 <div>
@@ -67,11 +67,11 @@
             </div>
         </div>
 
-        <div class="flex w-full gap-[2rem]">
-            <img src="img/kordict/kordict-mobile.png" alt="kordict" class="w-6/12"/>
-            <div class="w-6/12 flex flex-col justify-center">
-                <h2 class="text-4xl text-text font-bold">Korean Dictionary</h2>
-                <p class="text-3xl text-text mt-[1rem]">
+        <div class="flex w-full gap-[2rem] lg:gap-[0.5rem]">
+            <img src="img/kordict/kordict-mobile.png" alt="kordict" class="w-6/12 lg:max-h-[32rem] object-contain"/>
+            <div class="w-6/12 flex flex-col justify-center lg:justify-start">
+                <h2 class="text-text font-bold text-4xl lg:text-3xl">Korean Dictionary</h2>
+                <p class="text-text text-3xl lg:text-2xl mt-[1rem]">
                     Korean-English dictionary web app using Korean Dictionary API
                 </p>
                 <div>
@@ -85,17 +85,17 @@
 
 <section class="px-[4rem] py-[2rem] mt-[2rem] divide-y-4 divide-accent">
     <header class="flex items-center justify-between">
-        <h1 class="text-5xl text-text font-bold py-[1rem]">Contacts</h1>
+        <h1 class="text-text font-bold text-5xl lg:text-3xl py-[1rem]">Contacts</h1>
     </header>
 
     <div class="flex justify-between pt-[2rem] w-full gap-x-[3rem]">
         <div class="flex flex-col gap-y-[1rem]">
-            <p class="text-3xl">
+            <p class="text-text text-3xl lg:text-2xl">
                 Feel free to contact me through my email below!
             </p>
             <a href="mailto:anaufan11@gmail.com"
-               class="w-fit py-[1rem] px-[1.5rem]
-                      text-3xl font-bold text-bg
+               class="w-fit py-[1rem] px-[1.5rem] lg:py-[0.5rem]
+                      text-bg font-bold text-3xl lg:text-2xl
                       rounded
                       decoration-bg decoration-4 hover:underline underline-offset-8
                       bg-primary hover:bg-accent">
@@ -103,17 +103,17 @@
             </a>
         </div>
 
-        <div class="flex flex-col gap-y-[1rem] text-3xl text-text font-semibold">
+        <div class="flex flex-col gap-y-[1rem] text-text font-semibold text-3xl lg:text-2xl">
             <a href="https://github.com/ana117" target="_blank"
                class="flex items-center gap-x-[0.5rem]
                       hover:underline underline-offset-8 decoration-primary">
-                <img src="img/icons/github.svg" alt="github" class="w-[4rem]">
+                <img src="img/icons/github.svg" alt="github" class="w-[4rem] lg:w-[2.5rem]">
                 <p>ana117</p>
             </a>
             <a href="https://www.linkedin.com/in/ahmadnaufanw/" target="_blank"
                class="flex items-center gap-x-[0.5rem]
                       hover:underline underline-offset-8 decoration-primary">
-                <img src="img/icons/linkedin.svg" alt="linkedin" class="w-[4rem]">
+                <img src="img/icons/linkedin.svg" alt="linkedin" class="w-[4rem] lg:w-[2.5rem]">
                 <p>anaufanw</p>
             </a>
         </div>
