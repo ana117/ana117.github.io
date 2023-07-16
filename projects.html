@@ -28,19 +28,126 @@
 </head>
 <body class="bg-bg h-screen flex flex-col">
 
-<nav class="flex items-center bg-white px-[4rem] py-[1rem] sticky top-0">
-    <a href="/" class="text-primary font-bold text-4xl lg:text-2xl">
-        <img src="img/icons/logo.svg" alt="logo" class="w-[6rem] lg:w-[3rem]">
-    </a>
-    <div class="ml-auto flex gap-[4rem] text-primary font-bold text-4xl lg:text-2xl">
-        <a href="#" class="hover:underline decoration-accent">Projects</a>
-        <a href="#" class="hover:underline decoration-accent">Contact</a>
-    </div>
-</nav>
+<main id="content">
+    <nav class="flex items-center bg-white px-[4rem] py-[1rem] sticky top-0">
+        <a href="/" class="text-primary font-bold text-4xl lg:text-2xl">
+            <img src="img/icons/logo.svg" alt="logo" class="w-[6rem] lg:w-[3rem]">
+        </a>
+        <div class="ml-auto flex gap-[4rem] text-primary font-bold text-4xl lg:text-2xl">
+            <a href="/#projects" class="hover:underline decoration-accent">Projects</a>
+            <a href="/#contacts" class="hover:underline decoration-accent">Contact</a>
+        </div>
+    </nav>
 
-<section class="grow py-[4rem] bg-bg text-center text-text font-bold text-3xl">
-    In Construction!
-</section>
+    <section id="projects" class="px-[4rem] py-[2rem]">
+        <div class="flex flex-col w-full divide-y-4 divide-accent">
+            <div class="flex w-full gap-[2rem] lg:gap-[0.5rem] py-[2rem]">
+                <img src="img/imdifoods/imdifoods-mobile.png" alt="imdifoods mobile"
+                     class="w-6/12 lg:max-h-[32rem] object-contain">
+
+                <div class="w-6/12 flex flex-col justify-center lg:justify-start">
+                    <h2 class="text-text font-bold text-4xl lg:text-3xl">Imdifoods</h2>
+                    <p class="text-text text-3xl lg:text-2xl mt-[1rem]">
+                        E-commerce website for a food business in Indonesia.<br><br>
+                        Made using Spring Boot and PostgreSQL.<br>
+                        Group project for Software Engineering course.
+                    </p>
+                    <div class="grid grid-cols-4 lg:grid-cols-8 gap-y-[1rem] mt-[2rem]">
+                        <img src="img/icons/spring.svg" alt="spring" class="w-[4rem] lg:w-[3rem]">
+                        <img src="img/icons/postgre.svg" alt="postgre" class="w-[4rem] lg:w-[3rem]">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex w-full gap-[2rem] lg:gap-[0.5rem] py-[2rem]">
+                <img src="img/kordict/kordict-mobile.png" alt="kordict mobile"
+                     class="w-6/12 lg:max-h-[32rem] object-contain">
+
+                <div class="w-6/12 flex flex-col justify-center lg:justify-start">
+                    <h2 class="text-text font-bold text-4xl lg:text-3xl">Korean Dictionary</h2>
+                    <p class="text-text text-3xl lg:text-2xl mt-[1rem]">
+                        Korean-English dictionary web app using Korean Dictionary API.<br><br>
+                        Made using ReactJS and Python Flask.
+                    </p>
+                    <div class="flex gap-x-[2rem] mt-[1rem]">
+                        <a href="https://ana117.github.io/korean-dictionary" target="_blank"
+                           class="text-text text-3xl lg:text-2xl px-[0.25rem]
+                                  underline underline-offset-4 decoration-accent
+                                  hover:bg-accent hover:text-bg ease-in-out duration-200">
+                            Website
+                        </a>
+                        <a href="https://github.com/ana117/korean-dictionary" target="_blank"
+                           class="text-text text-3xl lg:text-2xl px-[0.25rem]
+                                  underline underline-offset-4 decoration-accent
+                                  hover:bg-accent hover:text-bg ease-in-out duration-200">
+                            Source Code
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-4 lg:grid-cols-8 gap-y-[1rem] mt-[2rem]">
+                        <img src="img/icons/react.svg" alt="react" class="w-[4rem] lg:w-[3rem]">
+                        <img src="img/icons/python.svg" alt="python" class="w-[4rem] lg:w-[3rem]">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex w-full gap-[2rem] lg:gap-[0.5rem] py-[2rem]">
+                <img src="img/icons/placeholder.svg" alt="sifost mobile placeholder"
+                     class="w-6/12 lg:max-h-[32rem] object-contain">
+
+                <div class="w-6/12 flex flex-col justify-center lg:justify-start">
+                    <h2 class="text-text font-bold text-4xl lg:text-3xl">Sifost</h2>
+                    <p class="text-text text-3xl lg:text-2xl mt-[1rem]">
+                        Survey and form maker web app.<br><br>
+                        Made in monolithic and microservice architecture using Spring Boot and PostgreSQL.<br>
+                        Group project for Advanced Programming course.
+                    </p>
+                    <div class="flex gap-x-[2rem] mt-[1rem]">
+                        <a href="https://github.com/ana117/sifost" target="_blank"
+                           class="text-text text-3xl lg:text-2xl px-[0.25rem]
+                                  underline underline-offset-4 decoration-accent
+                                  hover:bg-accent hover:text-bg ease-in-out duration-200">
+                            Source Code
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-4 lg:grid-cols-8 gap-y-[1rem] mt-[2rem]">
+                        <img src="img/icons/spring.svg" alt="spring" class="w-[4rem] lg:w-[3rem]">
+                        <img src="img/icons/postgre.svg" alt="postgre" class="w-[4rem] lg:w-[3rem]">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex w-full gap-[2rem] lg:gap-[0.5rem] py-[2rem]">
+                <img src="img/icons/placeholder.svg" alt="konvasearch mobile placeholder"
+                     class="w-6/12 lg:max-h-[32rem] object-contain">
+
+                <div class="w-6/12 flex flex-col justify-center lg:justify-start">
+                    <h2 class="text-text font-bold text-4xl lg:text-3xl">KonvaSearch</h2>
+                    <p class="text-text text-3xl lg:text-2xl mt-[1rem]">
+                        Web and mobile app for convalescent plasma donor.<br><br>
+                        Made using Django, Flutter, and PostgreSQL.<br>
+                        Group project for Platform-based Programming course.
+                    </p>
+                    <div class="flex gap-x-[2rem] mt-[1rem]">
+                        <a href="https://github.com/orgs/Pejuang-PBP/repositories" target="_blank"
+                           class="text-text text-3xl lg:text-2xl px-[0.25rem]
+                                  underline underline-offset-4 decoration-accent
+                                  hover:bg-accent hover:text-bg ease-in-out duration-200">
+                            Source Code
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-4 lg:grid-cols-8 gap-y-[1rem] mt-[2rem]">
+                        <img src="img/icons/python.svg" alt="python" class="w-[4rem] lg:w-[3rem]">
+                        <img src="img/icons/flutter.svg" alt="flutter" class="w-[4rem] lg:w-[3rem]">
+                        <img src="img/icons/postgre.svg" alt="postgre" class="w-[4rem] lg:w-[3rem]">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
 
 <footer class="py-[2rem] bg-secondary text-center">
     <p class="text-bg font-semibold text-3xl lg:text-lg">
