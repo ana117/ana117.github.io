@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64">
+	<title>Python</title>
+	<style>
+		.s0 { fill: #ffe05b }
+		.s1 { fill: #4081b2 }
+		.s2 { fill: #ffffff } 
+	</style>
+	<g id="Background">
+		<path id="Path 0" class="s0" d="m400 192v64h-256v16h-16v208h16v16h16v16h144v-16h16v-16h16v-80h-96v-16h240v-16h16v-16h16v-192h-16v-16h-16v-16h-80z"/>
+		<path id="Path 1" class="s1" d="m208 8v8h-16v16h-16v80h104v16h-248v16h-16v16h-16v192h16v16h16v16h80v-144h256v-16h16v-192h-16v-16h-16v-16h-144z"/>
+		<path id="Path 2" class="s2" d="m192 72v16h32v-32h-32zm96 368v16h32v-32h-32z"/>
+	</g>
+</svg>

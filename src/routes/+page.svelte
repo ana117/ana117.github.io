@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Hero from "$lib/components/Hero.svelte";
+    import MainProjects from "$lib/components/MainProjects.svelte";
+    import Contact from "$lib/components/Contact.svelte";
+</script>
+
+<div class="ml-[8rem] min-h-screen">
+    <Hero />
+
+    <div id="content" class="min-h-screen">
+        <MainProjects />
+
+        <Contact />
+    </div>
+</div>
