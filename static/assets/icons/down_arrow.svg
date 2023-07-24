@@ -1,7 +1,7 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
 	<title>DownArrow</title>
 	<style>
-		.s0 { fill: #f8f9f1 }
+		.s0 { fill: #733B56 }
 	</style>
 	<path id="Path 0" class="s0" d="m32 272v16h32v32h32v32h32v32h32v32h32v32h32v32h64v-32h32v-32h32v-32h32v-32h32v-32h32v-32h32v-32h-64v32h-32v32h-32v32h-32v32h-32v32h-64v-32h-32v-32h-32v-32h-32v-32h-32v-32h-64z"/>
 </svg>

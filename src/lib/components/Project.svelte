@@ -11,7 +11,7 @@
 
     <div class="w-6/12 flex flex-col justify-center md:justify-start">
         <h2 class="text-text font-bold text-4xl md:text-3xl">{title}</h2>
-        <p class="text-text text-3xl md:text-2xl mt-[1rem]">{description}</p>
+        <p class="text-text text-2xl mt-[1rem]">{description}</p>
 
         <div class="grid grid-cols-4 md:grid-cols-8 gap-x-[1rem] mt-[2rem]">
             {#each techStacks as techStack}

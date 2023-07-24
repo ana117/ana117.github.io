@@ -23,12 +23,12 @@
     ];
 </script>
 
-<section id="projects" class="px-[4rem] py-[2rem] divide-y-4 divide-accent">
+<section id="projects" class="p-[1rem] md:px-[4rem] md:py-[2rem] divide-y-4 divide-accent">
     <header class="flex items-center justify-between">
-        <h1 class="text-text font-bold text-5xl md:text-3xl py-[1rem]">Projects</h1>
+        <h1 class="text-text font-bold text-4xl md:text-3xl py-[1rem]">Projects</h1>
         <a href="#"
-           class="text-text italic text-3xl md:text-2xl hover:underline underline-offset-4 decoration-accent">
-            View All <span class="text-5xl md:text-3xl">&#8594;</span>
+           class="text-text italic text-2xl hover:underline underline-offset-4 decoration-accent">
+            View All <span class="text-3xl">&#8594;</span>
         </a>
     </header>
 

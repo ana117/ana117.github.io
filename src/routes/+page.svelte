@@ -10,7 +10,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
 </svelte:head>
 
-<div class="ml-[8rem] min-h-screen">
+<div class="md:ml-[8rem] min-h-screen">
     <Hero />
 
     <div id="content" class="min-h-screen">

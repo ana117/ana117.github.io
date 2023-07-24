@@ -4,8 +4,8 @@ import SidebarIcon from "$lib/components/SidebarIcon.svelte";
 
 <nav class="h-screen w-[8rem] top-0 left-0 fixed
             bg-white shadow-lg px-[1rem]
-            flex flex-col gap-y-[2rem] hidden md:block">
+            hidden md:flex flex-col gap-y-[2rem]">
     <SidebarIcon href="/" icon="logo" alt="logo" hover={false} customClass="w-[7rem] h-[7rem]" />
-    <SidebarIcon href="#projects" icon="projects" alt="projects" tooltip="View Selected Projects" />
-    <SidebarIcon href="#contact" icon="mail" alt="contact" tooltip="Contact Me" />
+    <SidebarIcon href="#projects" icon="projects_white" alt="projects" tooltip="View Selected Projects" />
+    <SidebarIcon href="#contact" icon="mail_white" alt="contact" tooltip="Contact Me" />
 </nav>
