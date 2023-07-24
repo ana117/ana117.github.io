@@ -1,4 +1,4 @@
-<section id="hero" class="flex flex-col justify-center items-center h-full bg-secondary py-[1rem]">
+<section id="hero" class="flex flex-col justify-center items-center h-screen bg-secondary py-[1rem]">
     <div class="flex justify-center items-center grow w-fit relative">
         <img src="/assets/logo_outer.svg" alt="logo" class="h-full">
         <h1 class="absolute font-bold text-8xl md:text-[4rem] text-center text-accent whitespace-pre-line">
