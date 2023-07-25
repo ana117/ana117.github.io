@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>Linkedin</title>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: #ffffff }
+	</style>
+	<g id="Background">
+		<path id="Path 0" class="s0" d="m96 68v4h-16v8h-8v16h-8v320h8v16h8v8h16v8h320v-8h16v-8h8v-16h8v-320h-8v-16h-8v-8h-16v-8h-320z"/>
+		<path id="Path 1" class="s1" d="m128 164v20h40v-40h-40zm0 120v84h40v-168h-40zm80 0v84h40v-88h8v-16h8v-8h16v-8h16v-8h32v8h8v16h8v104h40v-136h-8v-16h-8v-8h-16v-8h-64v8h-24v8h-8v8h-8v-24h-40z"/>
+	</g>
+</svg>
