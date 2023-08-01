@@ -4,8 +4,8 @@
 
 <div class="flex w-full gap-[2rem]">
     <picture class="w-6/12 md:max-h-[32rem] object-contain inline-block">
-        <source srcset="/assets/{project}/{project}-1-mobile.png" media="(max-width: 768px)">
-        <img src="/assets/{project}/{project}-1.png" alt="{project}">
+        <source srcset="/assets/{project}/{project}-1-mobile.webp" media="(max-width: 768px)">
+        <img src="/assets/{project}/{project}-1.webp" alt="{project}">
     </picture>
 
     <div class="w-6/12 flex flex-col justify-center md:justify-start gap-[1rem]">

@@ -12,7 +12,7 @@
 </script>
 
 {#if href}
-    <a {href} class="{hoverClass} group no-highlight">
+    <a {href} class="{hoverClass} group no-highlight" aria-label={`Go to ${href}`}>
         <div class="relative">
             <img src="/assets/icons/{icon}.svg" {alt} class="w-[4rem] h-[4rem] mx-auto my-4 {customClass}" />
             {#if hover && tooltip}
