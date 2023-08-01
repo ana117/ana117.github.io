@@ -5,7 +5,7 @@ import DarkModeSwitch from "$lib/components/DarkModeSwitch.svelte";
 
 <nav class="h-screen w-[8rem] top-0 left-0 fixed px-[1rem]
             bg-white shadow-lg dark:bg-primary
-            hidden md:flex flex-col ">
+            hidden md:flex flex-col z-10">
     <SidebarIcon href="/" icon="logo" alt="logo" hover={false} customClass="w-[7rem] h-[7rem] dark:hidden" />
     <SidebarIcon href="/" icon="logo_light" alt="logo" hover={false} customClass="w-[7rem] h-[7rem] hidden dark:flex" />
     <div class="flex flex-col justify-between h-full">

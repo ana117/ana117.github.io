@@ -9,7 +9,7 @@
     }
 </script>
 
-<nav class="md:hidden">
+<nav class="md:hidden z-10">
     <button on:click={toggle}
             class="flex items-center justify-center bg-primary {showMenu ? 'rounded-b-[3rem]' : 'rounded-[3rem]'}
                    w-[5rem] h-[5rem] fixed bottom-[2rem] right-[1rem] transition-all duration-100 no-highlight">
