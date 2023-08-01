@@ -13,13 +13,13 @@
     <button on:click={toggle}
             class="flex items-center justify-center bg-primary {showMenu ? 'rounded-b-[3rem]' : 'rounded-[3rem]'}
                    w-[5rem] h-[5rem] fixed bottom-[2rem] right-[1rem] transition-all duration-100 no-highlight">
-        <SidebarIcon href="" icon="logo_light" alt="logo" hover={false}/>
+        <SidebarIcon icon="logo_light" alt="logo" hover={false}/>
     </button>
     <div class="bg-primary rounded-t-3xl {showMenu ? 'scale-100' : 'scale-0'} z-10
                 w-[5rem] fixed bottom-[7.5rem] right-[1rem] px-[1rem] pb-[0.5rem]
                 transition-all origin-bottom duration-100">
-        <SidebarIcon href="#projects" icon="projects" alt="projects"/>
-        <SidebarIcon href="#contact" icon="mail" alt="contact"/>
+        <SidebarIcon href="/#projects" icon="projects" alt="projects"/>
+        <SidebarIcon href="/#contact" icon="mail" alt="contact"/>
         <DarkModeSwitch/>
     </div>
 </nav>
