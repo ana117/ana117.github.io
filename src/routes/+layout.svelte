@@ -5,9 +5,13 @@
     import NavbarMobile from "$lib/components/NavbarMobile.svelte";
 </script>
 
-<Navbar />
-<NavbarMobile />
+<Navbar/>
+<NavbarMobile/>
 
-<slot />
+<div class="flex flex-col min-h-screen">
+    <div class="md:ml-[8rem] grow">
+        <slot/>
+    </div>
+    <Footer/>
+</div>
 
-<Footer />
