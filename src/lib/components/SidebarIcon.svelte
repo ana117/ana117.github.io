@@ -11,17 +11,32 @@
         : "";
 </script>
 
-
-<a href={href || null} class="{hoverClass} group no-highlight">
-    <div class="relative">
-        <img src="/assets/icons/{icon}.svg" {alt} class="w-[4rem] h-[4rem] mx-auto my-4 {customClass}" />
-        {#if hover && tooltip}
-            <span class="absolute left-32 top-0 mt-[0.5rem] min-w-max px-[1rem] py-[0.5rem]
-                         text-white font-bold
-                         bg-accent dark:bg-primary rounded-md
-                         transition-all duration-200 scale-0 origin-left group-hover:scale-100">
-                {tooltip}
-            </span>
-        {/if}
+{#if href}
+    <a {href} class="{hoverClass} group no-highlight" aria-label={`Go to ${href}`}>
+        <div class="relative">
+            <img src="/assets/icons/{icon}.svg" {alt} class="w-[4rem] h-[4rem] mx-auto my-4 {customClass}" />
+            {#if hover && tooltip}
+                <span class="absolute left-32 top-0 mt-[0.5rem] min-w-max px-[1rem] py-[0.5rem]
+                             text-white font-bold
+                             bg-accent dark:bg-primary rounded-md
+                             transition-all duration-200 scale-0 origin-left group-hover:scale-100">
+                    {tooltip}
+                </span>
+            {/if}
+        </div>
+    </a>
+{:else}
+    <div {href} class="{hoverClass} group no-highlight">
+        <div class="relative">
+            <img src="/assets/icons/{icon}.svg" {alt} class="w-[4rem] h-[4rem] mx-auto my-4 {customClass}" />
+            {#if hover && tooltip}
+                <span class="absolute left-32 top-0 mt-[0.5rem] min-w-max px-[1rem] py-[0.5rem]
+                             text-white font-bold
+                             bg-accent dark:bg-primary rounded-md
+                             transition-all duration-200 scale-0 origin-left group-hover:scale-100">
+                    {tooltip}
+                </span>
+            {/if}
+        </div>
     </div>
-</a>
+{/if}
