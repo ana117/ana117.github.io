@@ -22,6 +22,17 @@
     "website": "https://ana117.github.io/korean-dictionary/"
   },
   {
+    "project": "web-games",
+    "title": "Web Games",
+    "summary": "Javascript-based browser games",
+    "description": "Collections of my Javascript-based browser games. Made using ReactJS.",
+    "techStacks": [
+      "react"
+    ],
+    "github": "https://github.com/ana117/web-games",
+    "website": "https://ana117.github.io/web-games/"
+  },
+  {
     "project": "konvasearch",
     "title": "KonvaSearch",
     "summary": "Platform to find and donate convalescent plasma for COVID-19 patients",
