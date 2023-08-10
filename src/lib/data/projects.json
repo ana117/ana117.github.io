@@ -26,8 +26,8 @@
   {
     "project": "web-games",
     "title": "Web Games",
-    "summary": "Javascript-based browser games",
-    "description": "Collections of my Javascript-based browser games. Made using ReactJS.",
+    "summary": "Collections of Javascript browser-based games",
+    "description": "Collections of my Javascript browser-based games. Made using ReactJS.",
     "techStacks": [
       "react",
       "tailwind"

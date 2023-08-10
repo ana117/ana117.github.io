@@ -16,7 +16,7 @@
 <Hero/>
 
 <div id="content" class="min-h-screen">
-    <ProjectsList displayCount="2" showDescription={false}/>
+    <ProjectsList displayCount="3" showDescription={false}/>
 
     <Contact/>
 </div>
