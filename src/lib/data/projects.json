@@ -6,7 +6,8 @@
     "description": "E-commerce website for a food business in Indonesia.\nGroup project for Software Engineering course.",
     "techStacks": [
       "spring",
-      "postgre"
+      "postgre",
+      "tailwind"
     ]
   },
   {
@@ -16,7 +17,8 @@
     "description": "Korean-English dictionary web app using Korean Dictionary API. Made using ReactJS and Django for the proxy server.",
     "techStacks": [
       "react",
-      "python"
+      "python",
+      "tailwind"
     ],
     "github": "https://github.com/ana117/korean-dictionary",
     "website": "https://ana117.github.io/korean-dictionary/"
@@ -27,7 +29,8 @@
     "summary": "Javascript-based browser games",
     "description": "Collections of my Javascript-based browser games. Made using ReactJS.",
     "techStacks": [
-      "react"
+      "react",
+      "tailwind"
     ],
     "github": "https://github.com/ana117/web-games",
     "website": "https://ana117.github.io/web-games/"

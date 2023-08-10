@@ -4,6 +4,10 @@
     const handleImageFallback = (e) => {
         e.target.src = 'https://placekitten.com/600/400';
     }
+
+    const handleIconFallback = (e) => {
+        e.target.src = '/assets/icons/question_mark.svg';
+    }
 </script>
 
 <div class="flex w-full gap-[2rem]">
@@ -36,7 +40,19 @@
         </div>
         <div class="grid grid-cols-4 md:grid-cols-8 gap-x-[1rem] mt-[1rem]">
             {#each techStacks as techStack}
-                <img src="/assets/icons/{techStack}.svg" alt="{techStack}" class="w-[4rem] md:w-[3rem] inline-block">
+                <div class="flex">
+                    <div class="relative group">
+                        <img src="/assets/icons/{techStack}.svg" alt="{techStack}"
+                             class="w-[4rem] md:w-[3rem]" on:error={handleIconFallback}>
+                        <div class="bg-primary text-white rounded-md px-[0.5rem]
+                                    absolute top-0 left-16 h-full z-10
+                                    hidden group-hover:flex items-center">
+                            <p class="text-xl capitalize font-semibold px-[0.5rem]">
+                                {techStack}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             {/each}
         </div>
     </div>
