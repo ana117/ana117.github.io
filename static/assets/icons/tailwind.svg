@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>Tailwind</title>
+	<style>
+		.s0 { fill: #5fcde4 } 
+	</style>
+	<path id="Path 0" class="s0" d="m176 108v4h-8v8h-16v8h-8v8h-8v8h-8v8h-8v8h-8v16h-8v24h-8v56h8v-8h8v-16h8v-8h8v-8h16v-16h24v-8h8v8h24v8h16v8h16v8h16v8h8v8h16v8h24v8h16v8h16v8h80v-8h8v-8h16v-8h8v-8h8v-8h8v-16h8v-8h8v-24h8v-64h-8v8h-8v16h-8v16h-16v16h-24v8h-8v-8h-24v-8h-16v-8h-16v-8h-16v-8h-8v-8h-16v-8h-24v-8h-16v-8h-16v-8h-80zm-64 168v4h-8v8h-16v8h-8v8h-8v8h-8v8h-8v8h-8v16h-8v24h-8v64h8v-8h8v-16h8v-8h8v-16h16v-16h24v-8h8v8h24v8h16v8h16v8h16v8h8v8h16v8h24v8h16v8h16v8h80v-8h8v-8h16v-8h8v-8h8v-8h8v-16h8v-8h8v-24h8v-64h-8v8h-8v16h-8v16h-16v16h-24v8h-8v-8h-24v-8h-16v-8h-16v-8h-16v-8h-8v-8h-16v-8h-24v-8h-16v-8h-16v-8h-80z"/>
+</svg>
