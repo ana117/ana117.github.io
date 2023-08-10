@@ -36,6 +36,18 @@
     "website": "https://ana117.github.io/web-games/"
   },
   {
+    "project": "grooming-gallery",
+    "title": "The Grooming Gallery Barbershop",
+    "summary": "Barbershop website to showcase their services and products",
+    "description": "Barbershop website to showcase their services and products (not a real business, demonstration only). Made using ReactJS.",
+    "techStacks": [
+      "react",
+      "tailwind"
+    ],
+    "github": "https://github.com/ana117/grooming-gallery",
+    "website": "https://ana117.github.io/grooming-gallery/"
+  },
+  {
     "project": "konvasearch",
     "title": "KonvaSearch",
     "summary": "Platform to find and donate convalescent plasma for COVID-19 patients",
