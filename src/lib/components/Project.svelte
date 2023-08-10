@@ -22,7 +22,7 @@
 
         <div class="flex gap-x-[1rem] text-xl">
             {#if github}
-                <a href={github}
+                <a href={github} target="_blank"
                    class="underline underline-offset-4 decoration-accent dark:decoration-secondary
                           hover:bg-accent hover:text-white hover:dark:bg-secondary hover:dark:text-black
                           duration-500 transition-all origin-bottom">
@@ -30,7 +30,7 @@
                 </a>
             {/if}
             {#if website}
-                <a href={website}
+                <a href={website} target="_blank"
                    class="underline underline-offset-4 decoration-accent dark:decoration-secondary
                           hover:bg-accent hover:text-white hover:dark:bg-secondary hover:dark:text-black
                           duration-500 transition-all origin-bottom">
