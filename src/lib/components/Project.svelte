@@ -10,14 +10,19 @@
     }
 </script>
 
-<div class="flex w-full gap-[2rem]">
-    <picture class="w-6/12 md:max-h-[32rem] object-contain flex justify-center">
-        <source srcset="/assets/{project}/{project}-1-mobile.webp" media="(max-width: 768px)">
-        <img src="/assets/{project}/{project}-1.webp" alt="{project}" on:error={handleImageFallback}>
-    </picture>
+<div class="flex w-full gap-[2rem] py-[2rem]" id="{project}">
+    <a href="/projects/#{project}" class="w-6/12 lg:max-h-[32rem]">
+        <picture class="object-contain flex justify-center">
+            <source srcset="/assets/{project}/{project}-1-mobile.webp" media="(max-width: 1024px)">
+            <img src="/assets/{project}/{project}-1.webp" alt="{project}" on:error={handleImageFallback}>
+        </picture>
+    </a>
 
-    <div class="w-6/12 flex flex-col justify-center md:justify-start gap-[1rem]">
-        <h2 class="text-text font-bold text-4xl md:text-3xl">{title}</h2>
+    <div class="w-6/12 flex flex-col justify-center lg:justify-start gap-[1rem]">
+        <a href="/projects/#{project}"
+           class="hover:underline underline-offset-4 decoration-primary dark:decoration-secondary w-fit">
+            <h2 class="text-text font-bold text-4xl lg:text-3xl">{title}</h2>
+        </a>
         <p class="text-text text-2xl mt-[1rem]">{description}</p>
 
         <div class="flex gap-x-[1rem] text-xl">
@@ -38,12 +43,12 @@
                 </a>
             {/if}
         </div>
-        <div class="grid grid-cols-4 md:grid-cols-8 gap-x-[1rem] mt-[1rem]">
+        <div class="grid grid-cols-4 lg:grid-cols-8 gap-x-[1rem] mt-[1rem]">
             {#each techStacks as techStack}
                 <div class="flex">
                     <div class="relative group">
                         <img src="/assets/icons/{techStack}.svg" alt="{techStack}"
-                             class="w-[4rem] md:w-[3rem]" on:error={handleIconFallback}>
+                             class="w-[4rem] lg:w-[3rem]" on:error={handleIconFallback}>
                         <div class="bg-primary text-white rounded-md px-[0.5rem]
                                     absolute top-0 left-16 h-full z-10
                                     hidden group-hover:flex items-center">
