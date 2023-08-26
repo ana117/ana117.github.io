@@ -21,9 +21,9 @@
     <div class="w-6/12 flex flex-col justify-center lg:justify-start gap-[1rem]">
         <a href="/projects/#{project}"
            class="hover:underline underline-offset-4 decoration-primary dark:decoration-secondary w-fit">
-            <h2 class="text-text font-bold text-4xl lg:text-3xl">{title}</h2>
+            <h3 class="text-text font-bold text-2xl lg:text-3xl">{title}</h3>
         </a>
-        <p class="text-text text-2xl mt-[1rem]">{description}</p>
+        <p class="text-text text-xl mt-[1rem]">{description}</p>
 
         <div class="flex gap-x-[1rem] text-xl">
             {#if github}

@@ -15,11 +15,11 @@
     }
 }
 
-body {
+* {
     transition: background-color 0.3s ease;
     font-family: 'Roboto Mono', monospace;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Press Start 2P', cursive;
 }
