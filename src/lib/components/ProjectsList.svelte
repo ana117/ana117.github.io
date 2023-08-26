@@ -7,6 +7,17 @@
     export let showViewAll = true;
 
     displayCount = Math.min(displayCount, projects.length);
+
+    const techStacks = {};
+    projects.forEach(project => {
+        project.techStacks.forEach(techStack => {
+            if (techStacks[techStack] === undefined) {
+                techStacks[techStack] = 1;
+            } else {
+                techStacks[techStack]++;
+            }
+        });
+    });
 </script>
 
 <section id="projects"
@@ -23,16 +34,28 @@
         {/if}
     </header>
 
-    <div class="flex flex-col gap-y-[4rem] pt-[2rem] w-full">
-        {#each projects.slice(0, displayCount) as project}
-            <Project
-                project={project.project}
-                title={project.title}
-                description={showDescription ? project.description : project.summary}
-                techStacks={project.techStacks}
-                github={project.github}
-                website={project.website}
-            />
-        {/each}
+    <div class="flex flex-col gap-[1rem] pt-[2rem] w-full">
+        <div class="flex items-center gap-[2rem] text-xl md:text-2xl">
+            <p>Tech Stacks</p>
+            <div class="flex flex-wrap gap-x-[1rem] gap-y-[0.5rem]">
+                {#each Object.keys(techStacks) as techStack}
+                    <span class="text-sm md:text-lg px-[0.5rem] py-[0.25rem] rounded-md bg-accent text-secondary">
+                        {techStack} ({techStacks[techStack]})
+                    </span>
+                {/each}
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-[4rem]">
+            {#each projects.slice(0, displayCount) as project}
+                <Project
+                    project={project.project}
+                    title={project.title}
+                    description={showDescription ? project.description : project.summary}
+                    techStacks={project.techStacks}
+                    github={project.github}
+                    website={project.website}
+                />
+            {/each}
+        </div>
     </div>
 </section>
