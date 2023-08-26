@@ -10,10 +10,10 @@
             I'm Naufan
         </div>
         <div class="hidden lg:flex flex-col gap-[1rem] ">
-            <h1 class="font-bold text-[3rem] lg:text-[3rem]">
-                Greetings Human, I'm Naufan
+            <h1 class="font-bold lg:text-[2rem]">
+                Greetings Human, <br/>I'm Naufan
             </h1>
-            <p class="text-[2rem] whitespace-pre-line">
+            <p class="text-[2rem]">
                 A final year Computer Science student
                 with a passion for programming, particularly in <span class="font-semibold">web development</span>.
             </p>
