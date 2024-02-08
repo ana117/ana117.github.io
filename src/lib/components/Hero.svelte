@@ -10,8 +10,8 @@
             I'm Naufan
         </div>
         <div class="hidden lg:flex flex-col gap-[1rem] ">
-            <h1 class="font-bold lg:text-[2rem]">
-                Greetings Human, <br/>I'm Naufan
+            <h1 class="font-bold lg:text-4xl">
+                Greetings Human, I'm Naufan
             </h1>
             <p class="text-[2rem]">
                 A final year Computer Science student

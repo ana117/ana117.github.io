@@ -24,7 +24,7 @@
          class="p-[1rem] md:px-[4rem] md:py-[2rem] divide-y-4 divide-accent
                 dark:bg-black dark:text-secondary dark:divide-secondary">
     <header class="flex items-center justify-between">
-        <h2 class="font-bold text-2xl md:text-3xl py-[1rem]">Projects</h2>
+        <h2 class="font-bold text-3xl md:text-4xl py-[1rem]">Projects</h2>
 
         {#if showViewAll}
             <a href="/projects"

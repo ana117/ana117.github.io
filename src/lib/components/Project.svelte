@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Link from "./Link.svelte";
+
     export let project, title, description, techStacks, github, website;
 
     const handleImageFallback = (e) => {
@@ -27,20 +29,10 @@
 
         <div class="flex gap-x-[1rem] text-xl">
             {#if github}
-                <a href={github} target="_blank"
-                   class="underline underline-offset-4 decoration-accent dark:decoration-secondary
-                          hover:bg-accent hover:text-white hover:dark:bg-secondary hover:dark:text-black
-                          duration-500 transition-all origin-bottom">
-                    GitHub
-                </a>
+                <Link text="GitHub" rel={github} />
             {/if}
             {#if website}
-                <a href={website} target="_blank"
-                   class="underline underline-offset-4 decoration-accent dark:decoration-secondary
-                          hover:bg-accent hover:text-white hover:dark:bg-secondary hover:dark:text-black
-                          duration-500 transition-all origin-bottom">
-                    Website
-                </a>
+                <Link text="Website" rel={website} />
             {/if}
         </div>
         <div class="grid grid-cols-4 lg:grid-cols-8 gap-x-[1rem] mt-[1rem]">

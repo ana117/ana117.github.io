@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>ana117 | Project List</title>
+    <title>ana117 | Projects</title>
 
     <meta name="description" content="ana117's projects list.">
 </svelte:head>
