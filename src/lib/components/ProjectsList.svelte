@@ -35,11 +35,11 @@
     </header>
 
     <div class="flex flex-col gap-[1rem] pt-[2rem] w-full">
-        <div class="flex items-center gap-[2rem] text-xl md:text-2xl">
+        <div class="flex flex-col lg:flex-row gap-[1rem] lg:gap-[2rem] text-xl md:text-2xl">
             <p>Tech Stacks</p>
             <div class="flex flex-wrap gap-x-[1rem] gap-y-[0.5rem]">
                 {#each Object.keys(techStacks) as techStack}
-                    <span class="text-sm md:text-lg px-[0.5rem] py-[0.25rem] rounded-md bg-accent text-secondary">
+                    <span class="text-sm md:text-lg px-[0.5rem] py-[0.25rem] rounded-md bg-primary text-secondary">
                         {techStack} ({techStacks[techStack]})
                     </span>
                 {/each}

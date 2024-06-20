@@ -3,12 +3,12 @@
 
     export let project, title, description, techStacks, github, website;
 
-    const handleImageFallback = (e) => {
-        e.target.src = 'https://placekitten.com/600/400';
+    const handleImageFallback = (e: Event) => {
+        (e.target as HTMLImageElement).src = 'https://placehold.co/600x400';
     }
-
-    const handleIconFallback = (e) => {
-        e.target.src = '/assets/icons/question_mark.svg';
+    
+    const handleIconFallback = (e: Event) => {
+        (e.target as HTMLImageElement).src = '/assets/icons/question_mark.svg';
     }
 </script>
 
@@ -44,7 +44,7 @@
                         <div class="bg-primary text-white rounded-md px-[0.5rem]
                                     absolute top-0 left-16 h-full z-10
                                     hidden group-hover:flex items-center">
-                            <p class="text-xl capitalize font-semibold px-[0.5rem]">
+                            <p class="text-xl font-semibold px-[0.5rem]">
                                 {techStack}
                             </p>
                         </div>
