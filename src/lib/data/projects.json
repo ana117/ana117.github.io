@@ -1,5 +1,18 @@
 [
   {
+    "project": "cloudcipher",
+    "title": "CloudCipher",
+    "summary": "End-to-end encrypted cloud storage desktop app",
+    "description": "An end-to-end encrypted cloud storage. Implementing proxy re-encryption for secure file sharing.\nProject for Undergraduate Thesis.",
+    "techStacks": [
+      "java",
+      "javafx",
+      "spring",
+      "aws"
+    ],
+    "github": "https://github.com/cloudcipher-ui/"
+  },
+  {
     "project": "imdifoods",
     "title": "Imdifoods",
     "summary": "E-commerce website for a food business in Indonesia",
