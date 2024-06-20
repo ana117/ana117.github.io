@@ -7,7 +7,7 @@
     "techStacks": [
       "java",
       "javafx",
-      "spring",
+      "springboot",
       "aws"
     ],
     "github": "https://github.com/cloudcipher-ui/"
@@ -18,7 +18,8 @@
     "summary": "E-commerce website for a food business in Indonesia",
     "description": "E-commerce website for a food business in Indonesia.\nGroup project for Software Engineering course.",
     "techStacks": [
-      "spring",
+      "java",
+      "springboot",
       "postgre",
       "tailwind"
     ]
