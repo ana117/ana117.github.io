@@ -25,6 +25,17 @@
     ]
   },
   {
+    "project": "go-chat",
+    "title": "GoChat",
+    "summary": "A simple real-time chat application using Go and WebSockets.",
+    "description": "Real-time chat application using Go and WebSockets. Features include multiple chat rooms. Made using Go.",
+    "techStacks": [
+      "go",
+      "tailwind"
+    ],
+    "github": "https://github.com/ana117/go-chat"
+  },
+  {
     "project": "kordict",
     "title": "Korean Dictionary",
     "summary": "Korean-English dictionary web app using Korean Dictionary API",
