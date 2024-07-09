@@ -18,10 +18,10 @@
             <div class="flex flex-col lg:flex-row justify-between">
                 <div>
                     <h3 class="text-xl md:text-2xl font-bold">FutureView.app</h3>
-                    <h3 class="text-xl md:text-2xl">Web Developer (Freelance)</h3>
+                    <h3 class="text-xl md:text-2xl">Web Developer</h3>
                 </div>
                 <div class="flex lg:flex-col justify-between lg:text-end">
-                    <p>2024 - Present</p>
+                    <p>Freelance</p>
                     <p class="italic">Remote</p>
                 </div>
             </div>
