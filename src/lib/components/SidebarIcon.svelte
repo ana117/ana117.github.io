@@ -1,5 +1,6 @@
 <script lang="ts">
-    export let icon, alt, href : string;
+    export let icon, alt : string;
+    export let href : string = "";
     export let tooltip : string = "";
     export let customClass : string = "";
     export let hover : boolean = true;
@@ -26,7 +27,7 @@
         </div>
     </a>
 {:else}
-    <div {href} class="{hoverClass} group no-highlight">
+    <div class="{hoverClass} group no-highlight">
         <div class="relative">
             <img src="/assets/icons/{icon}.svg" {alt} class="w-[4rem] h-[4rem] mx-auto my-4 {customClass}" />
             {#if hover && tooltip}

@@ -46,15 +46,15 @@
                 <Link text="Website" rel={website} />
             {/if}
         </div>
-        <div class="grid grid-cols-4 lg:grid-cols-8 gap-x-[1rem] mt-[1rem]">
+        <div class="grid grid-cols-4 lg:grid-cols-8 gap-x-[1rem] mt-[1rem] z-0">
             {#each techStacks as techStack}
                 <div class="flex">
                     <div class="relative group">
                         <img src="/assets/icons/{techStack}.svg" alt="{techStack}"
-                             class="w-[4rem] lg:w-[3rem]" on:error={handleIconFallback}>
+                             class="w-[4rem] lg:w-[3rem] z-0" on:error={handleIconFallback}>
                         <div class="bg-primary text-white rounded-md px-[0.5rem]
                                     absolute top-0 left-16 h-full z-10
-                                    hidden group-hover:flex items-center">
+                                    hidden group-hover:lg:flex items-center">
                             <p class="text-xl font-semibold px-[0.5rem]">
                                 {techStack}
                             </p>
