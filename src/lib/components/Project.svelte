@@ -1,7 +1,7 @@
 <script lang="ts">
     import Link from "./Link.svelte";
 
-    export let project, title, description, techStacks, github, website;
+    export let project, title, summary, points, techStacks, github, website;
 
     const handleImageFallback = (e: Event) => {
         (e.target as HTMLImageElement).src = 'https://placehold.co/600x400';
@@ -25,7 +25,18 @@
            class="hover:underline underline-offset-4 decoration-primary dark:decoration-secondary w-fit">
             <h3 class="text-text font-bold text-2xl lg:text-3xl">{title}</h3>
         </a>
-        <p class="text-text text-xl mt-[1rem]">{description}</p>
+        <p class="text-text text-xl mt-[1rem]">
+            {@html summary}
+        </p>
+        <div class="overflow-y-auto max-h-[200px] lg:max-h-[400px] pe-[1rem] scrollbar">
+            <ul class="list-disc ms-[2rem] *:mt-[0.25rem]">
+                {#each points as point}
+                    <li class="text-text text-xl">
+                        {@html point}
+                    </li>
+                {/each}
+            </ul>
+        </div>
 
         <div class="flex gap-x-[1rem] text-xl">
             {#if github}

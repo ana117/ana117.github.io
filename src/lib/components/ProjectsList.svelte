@@ -88,7 +88,8 @@
                 <Project
                 project={project.project}
                 title={project.title}
-                description={showDescription ? project.description : project.summary}
+                summary={project.description.summary}
+                points={showDescription ? project.description.points : []}
                 techStacks={project.techStacks}
                 github={project.github}
                 website={project.website}

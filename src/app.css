@@ -14,11 +14,38 @@
         -ms-user-select: none;
         user-select: none;
     }
+
+    .scrollbar::-webkit-scrollbar {
+        width: 10px;
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-color: #733B56;
+        border-radius: 8px;
+    }
+    .scrollbar::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 8px;
+        border: 1px solid #733B56;
+    }
+    
 }
 
 * {
     transition: background-color 0.3s ease;
     font-family: 'Roboto Mono', monospace;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #733B56;
+}
+.dark *::-webkit-scrollbar-track {
+    background-color: #1E200E;
+}
+.light *::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
 }
 
 h1, h2 {
