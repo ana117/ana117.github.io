@@ -29,13 +29,16 @@
                 {expanded ? "Hide" : "Show"} Details
             </button>
             {#if expanded}
-            <ul transition:slide class="list-disc list-inside">
-                <li>Designed, developed, and managed the website for <Link text="FutureView.app" rel="https://futureview.app" target="_blank"/>.</li>
-                <li>Converted spreadsheet data into dedicated web pages.</li>
-                <li>Implemented PayPal payment gateway for monetization purposes.</li>
-                <li>Successfully migrated data from the previous website to the new platform.</li>
-                <li>Achieved a significant increase in viewership within the first week of relaunch.</li>
+            <ul transition:slide class="list-disc ms-[2rem] *:mt-[0.25rem]">
+                <li>Designed and developed a Django-based website with TailwindCSS</li>
+                <li>Executed a data migration of 300 users from legacy systems by replication the original hashing method</li>
+                <li>Developed 5 new features resulting in 75% increase in total users on the first month</li>
+                <li>Integrated PayPal API to automate the payment process, reducing the time needed to manually process payments</li>
+                <li>Created automated scripts to update/populate the database from spreadsheet data, reducing the time needed to make frequent changes based on user feedback</li>
             </ul>
+            <div>
+                <Link text="FutureView.app" rel="https://futureview.app" target="_blank"/>
+            </div>
             {/if}
         </div>
     </div>
