@@ -11,7 +11,7 @@ import DarkModeSwitch from "$lib/components/DarkModeSwitch.svelte";
     <div class="flex flex-col justify-between h-full">
         <div class="flex flex-col gap-y-[2rem] mt-[2rem]">
             <SidebarIcon href="/#projects" icon="projects" alt="projects" tooltip="View Selected Projects" />
-            <SidebarIcon href="/#contact" icon="mail" alt="contact" tooltip="Contact Me" />
+            <SidebarIcon href="/#contact" icon="mail_light" alt="contact" tooltip="Contact Me" />
         </div>
         <div class="mb-[2rem] bg-primary dark:bg-accent p-[1rem] rounded-full">
             <DarkModeSwitch />

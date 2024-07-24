@@ -19,7 +19,7 @@
                 w-[5rem] fixed bottom-[7.5rem] right-[1rem] px-[1rem] pb-[0.5rem]
                 transition-all origin-bottom duration-100">
         <SidebarIcon href="/#projects" icon="projects" alt="projects"/>
-        <SidebarIcon href="/#contact" icon="mail" alt="contact"/>
+        <SidebarIcon href="/#contact" icon="mail_light" alt="contact"/>
         <DarkModeSwitch/>
     </div>
 </nav>
