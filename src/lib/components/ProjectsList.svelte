@@ -42,7 +42,7 @@
     }
 </script>
 
-<section id="projects" class="p-[1rem] md:px-[4rem] md:py-[2rem] divide-y-4 divide-accent dark:bg-black dark:text-secondary dark:divide-secondary h-full">
+<section id="projects" class="p-[1rem] md:p-[2rem] divide-y-4 divide-accent dark:bg-black dark:text-secondary dark:divide-secondary h-full">
     <header class="flex items-center justify-between">
         <h2 class="font-bold text-3xl md:text-4xl py-[1rem]">Projects</h2>
 
@@ -75,7 +75,7 @@
             </div>
         </div>
         
-        <div class="flex flex-wrap justify-center gap-[3rem]">
+        <div class="flex flex-wrap justify-center gap-[2rem]">
             {#each filteredProjects.slice(0, displayCount) as project}
                 {#if preview}
                     <ProjectPreview

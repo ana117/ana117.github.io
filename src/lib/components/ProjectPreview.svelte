@@ -16,10 +16,10 @@
     <div class="relative">
         <a href="/projects/#{project}" class="w-full relative z-0">
             <picture>
-                <img class="w-[640px] h-[360px] rounded-t-xl object-cover object-top" src="/assets/{project}/{project}-1.webp" alt="{project}" on:error={handleImageFallback}>
+                <img class="w-[480px] h-[270px]  rounded-t-xl object-cover object-top" src="/assets/{project}/{project}-1.webp" alt="{project}" on:error={handleImageFallback}>
             </picture>
             <div class="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 h-full w-full backdrop-blur-sm rounded-t-xl">
-                <p class="bg-secondary dark:bg-accent text-black dark:text-white p-[1rem] text-4xl font-bold mt-auto rounded-t-lg">
+                <p class="bg-secondary dark:bg-accent text-black dark:text-white p-[1rem] text-2xl font-bold mt-auto rounded-t-lg">
                     {title}
                 </p>
             </div>

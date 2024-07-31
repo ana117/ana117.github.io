@@ -1,6 +1,5 @@
 <script>
     import { slide } from "svelte/transition";
-    import Link from "./Link.svelte";
 
     let expanded = false;
 
@@ -8,7 +7,7 @@
 		expanded = !expanded
 	}
 </script>
-<section id="experiences" class="p-[1rem] md:px-[4rem] md:py-[2rem] divide-y-4 divide-accent dark:bg-black dark:text-secondary dark:divide-secondary">
+<section id="experiences" class="p-[1rem] md:p-[2rem] divide-y-4 divide-accent dark:bg-black dark:text-secondary dark:divide-secondary">
     <header class="flex items-center justify-between">
         <h2 class="font-bold text-3xl md:text-4xl py-[1rem]">Experiences</h2>
     </header>
