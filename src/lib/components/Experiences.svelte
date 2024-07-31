@@ -17,8 +17,12 @@
         <div class="flex flex-col w-full gap-[0.5rem]">
             <div class="flex flex-col lg:flex-row justify-between">
                 <div>
-                    <h3 class="text-xl md:text-2xl font-bold">FutureView.app</h3>
-                    <h3 class="text-xl md:text-2xl">Web Developer</h3>
+                    <h3 class="text-xl md:text-2xl font-bold hover:underline">
+                        <a href="https://futureview.app" target="_blank">
+                            FutureView.app
+                        </a>
+                    </h3>
+                    <h3 class="text-xl md:text-2xl">Full Stack Web Developer</h3>
                 </div>
                 <div class="flex lg:flex-col justify-between lg:text-end">
                     <p>Freelance</p>
@@ -36,9 +40,6 @@
                 <li>Integrated PayPal API to automate the payment process, reducing the time needed to manually process payments</li>
                 <li>Created automated scripts to update/populate the database from spreadsheet data, reducing the time needed to make frequent changes based on user feedback</li>
             </ul>
-            <div>
-                <Link text="FutureView.app" rel="https://futureview.app" target="_blank"/>
-            </div>
             {/if}
         </div>
     </div>
