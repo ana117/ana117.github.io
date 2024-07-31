@@ -1,35 +1,29 @@
-<script>
-// @ts-nocheck
-
+<script lang="ts">
     import Project from "$lib/components/Project.svelte";
+    import ProjectPreview from "$lib/components/ProjectPreview.svelte";
     import projects from "$lib/data/projects";
 
     export let displayCount = projects.length;
-    export let showDescription = true;
     export let showViewAll = true;
+    export let preview = false;
 
     displayCount = Math.min(displayCount, projects.length);
 
-    const techStacks = {};
+    const techStacks = new Map<string, number>();
     projects.slice(0, displayCount).forEach(project => {
         project.techStacks.forEach(techStack => {
-            if (techStacks[techStack] === undefined) {
-                techStacks[techStack] = 1;
-            } else {
-                techStacks[techStack]++;
-            }
+            techStacks.set(techStack, (techStacks.get(techStack) || 0) + 1);
         });
     });
 
-
-    let selectedTechStacks = Object.keys(techStacks);
+    let selectedTechStacks: string[] = [...techStacks.keys()];
     let filteredProjects = filterProjects();
 
-    function toggleTechStack(techStack) {
+    function toggleTechStack(techStack: string) {
         if (techStack === 'clear') {
             selectedTechStacks = [];
         } else if (techStack === 'all') {
-            selectedTechStacks = Object.keys(techStacks);
+            selectedTechStacks = [...techStacks.keys()];
         } else {
             if (selectedTechStacks.includes(techStack)) {
                 selectedTechStacks = selectedTechStacks.filter(stack => stack !== techStack);
@@ -48,9 +42,7 @@
     }
 </script>
 
-<section id="projects"
-         class="p-[1rem] md:px-[4rem] md:py-[2rem] divide-y-4 divide-accent
-                dark:bg-black dark:text-secondary dark:divide-secondary h-full">
+<section id="projects" class="p-[1rem] md:px-[4rem] md:py-[2rem] divide-y-4 divide-accent dark:bg-black dark:text-secondary dark:divide-secondary h-full">
     <header class="flex items-center justify-between">
         <h2 class="font-bold text-3xl md:text-4xl py-[1rem]">Projects</h2>
 
@@ -62,17 +54,16 @@
         {/if}
     </header>
 
-    <div class="flex flex-col gap-[1rem] pt-[2rem] w-full">
+    <div class="flex flex-col items-center gap-[2rem] pt-[2rem] w-full">
         <div class="flex flex-col lg:flex-row lg:items-center gap-[1rem] lg:gap-[2rem] text-xl md:text-2xl">
-            <p>Tech Stacks</p>
             <div class="flex flex-wrap gap-x-[1rem] gap-y-[0.5rem]">
-                {#each Object.keys(techStacks).sort() as techStack}
+                {#each [...techStacks] as [techStack, stackCount]}
                     <button 
                         class="text-sm md:text-lg px-[0.5rem] py-[0.25rem] rounded-md bg-primary text-secondary"
                         class:opacity-50={!selectedTechStacks.includes(techStack)}
                         on:click={() => toggleTechStack(techStack)}
                     >
-                        {techStack} ({techStacks[techStack]})
+                        {techStack} ({stackCount})
                     </button>
                 {/each}
                 <button class="text-sm md:text-lg px-[0.5rem] py-[0.25rem] rounded-md bg-primary text-secondary"on:click={() => toggleTechStack('all')}>
@@ -83,17 +74,28 @@
                 </button>
             </div>
         </div>
-        <div class="flex flex-col gap-y-[4rem]">
+        
+        <div class="flex flex-wrap justify-center gap-[3rem]">
             {#each filteredProjects.slice(0, displayCount) as project}
-                <Project
-                project={project.project}
-                title={project.title}
-                summary={project.description.summary}
-                points={showDescription ? project.description.points : []}
-                techStacks={project.techStacks}
-                github={project.github}
-                website={project.website}
-            />
+                {#if preview}
+                    <ProjectPreview
+                        project={project.project}
+                        title={project.title}
+                        techStacks={project.techStacks}
+                        github={project.github}
+                        website={project.website}
+                    />
+                {:else}
+                    <Project
+                        project={project.project}
+                        title={project.title}
+                        summary={project.description.summary}
+                        points={project.description.points}
+                        techStacks={project.techStacks}
+                        github={project.github}
+                        website={project.website}
+                    />
+                {/if}
             {/each}
         </div>
     </div>

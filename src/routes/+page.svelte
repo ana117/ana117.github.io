@@ -18,7 +18,7 @@
 
 <div id="content" class="min-h-screen">
     <Experiences/>
-    <ProjectsList displayCount="4" showDescription={false}/>
+    <ProjectsList displayCount={4} preview={true}/>
 
     <Contact/>
 </div>
