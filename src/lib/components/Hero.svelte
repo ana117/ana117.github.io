@@ -1,22 +1,22 @@
-<section id="hero"
-         class="flex flex-col justify-center items-center py-[1rem] h-screen
-                bg-secondary dark:bg-accent">
-    <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-[4rem]
-                grow relative z-0 px-[4rem] text-primary dark:text-secondary">
-                
+<section id="hero" class="flex flex-col justify-center items-center py-[1rem] h-screen bg-secondary dark:bg-accent">
+    <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-[4rem] grow relative z-0 px-[1rem] lg:px-[4rem] text-primary dark:text-secondary">
         <img src="/assets/icons/logo.svg" alt="logo" class="w-[16rem] xl:w-[32rem] dark:hidden">
         <img src="/assets/icons/logo_light.svg" alt="logo" class="w-[16rem] xl:w-[32rem] hidden dark:block">
 
-        <div class="flex flex-col gap-[1rem] ">
+        <div class="flex flex-col gap-[1rem]">
             <h1 class="font-bold text-4xl text-center lg:text-start lg:text-4xl">
-                <span>Greetings!</span> <span class="whitespace-nowrap">I'm Ahmad Naufan</span>
+                <span>Greetings!</span> 
+                <span class="lg:whitespace-nowrap">I'm Ahmad Naufan</span>
             </h1>
-            <p class="text-xl">
-                Full Stack Developer • Bachelor of Computer Science from University of Indonesia
+            <p class="text-xl text-center lg:text-start">
+                Full Stack Developer 
+                <span class="hidden lg:inline">
+                    • Bachelor of Computer Science from University of Indonesia
+                </span>
             </p>
 
-            <div class="flex flex-wrap gap-x-[1rem] gap-y-[1rem]">
-                <span class="flex items-center gap-[0.5rem] w-full md:w-fit me-auto">
+            <div class="flex flex-wrap justify-center gap-x-[1rem] gap-y-[1rem]">
+                <span class="flex justify-center items-center gap-[0.5rem] w-full md:w-fit lg:me-auto w-full">
                     <img src="/assets/icons/location.svg" alt="location" class="w-[2rem] md:w-[2rem] dark:hidden">
                     <img src="/assets/icons/location_light.svg" alt="location"class="w-[2rem] md:w-[2rem] hidden dark:block">
                     South Tangerang, Indonesia
@@ -38,9 +38,7 @@
         </div>
     </div>
     <a href="#content">
-        <img src="/assets/icons/down_arrow.svg" alt="down arrow"
-             class="w-[6rem] lg:w-[5rem] grow-0 animate-bounce dark:hidden">
-        <img src="/assets/icons/down_arrow_light.svg" alt="down arrow"
-             class="w-[6rem] lg:w-[5rem] grow-0 animate-bounce hidden dark:block">
+        <img src="/assets/icons/down_arrow.svg" alt="down arrow" class="w-[6rem] lg:w-[5rem] grow-0 animate-bounce dark:hidden">
+        <img src="/assets/icons/down_arrow_light.svg" alt="down arrow" class="w-[6rem] lg:w-[5rem] grow-0 animate-bounce hidden dark:block">
     </a>
 </section>
