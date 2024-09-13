@@ -40,7 +40,7 @@
                         <img src="assets/icons/github_light.svg" alt="github" class="w-[2.5rem] hidden dark:block">
                     </a>
                     
-                    <a href={Resume} target="_blank" download class="hover:scale-125 transition duration-500">
+                    <a href={Resume} download="Resume_AhmadNaufanW" target="_blank" class="hover:scale-125 transition duration-500">
                         <img src="assets/icons/cv.svg" alt="cv" class="w-[2.5rem] dark:hidden">
                         <img src="assets/icons/cv_light.svg" alt="cv" class="w-[2.5rem] hidden dark:block">
                     </a>
