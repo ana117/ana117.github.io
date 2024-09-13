@@ -10,7 +10,7 @@
         <div class="flex flex-col gap-[1rem]">
             <h1 class="font-bold text-4xl text-center lg:text-start lg:text-4xl">
                 <span>Greetings!</span> 
-                <span class="lg:whitespace-nowrap">I'm Ahmad Naufan</span>
+                <span class="lg:whitespace-nowrap">I'm Ahmad Naufan W</span>
             </h1>
             <p class="text-xl text-center lg:text-start">
                 Full Stack Developer 
