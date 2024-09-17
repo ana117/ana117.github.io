@@ -6,11 +6,7 @@
 </script>
 
 <svelte:head>
-    <title>ana117 | Ahmad Naufan</title>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
-
-    <meta name="description" content="Ahmad Naufan's portfolio website.">
+    <title>ana117 | Ahmad Naufan Wicaksonoputra</title>
 </svelte:head>
 
 
