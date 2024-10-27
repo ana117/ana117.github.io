@@ -6,4 +6,6 @@
     <title>ana117 | Projects</title>
 </svelte:head>
 
-<ProjectsList showViewAll={false} />
+<main class="lg:mx-[5rem] xl:mx-[10rem">
+    <ProjectsList showViewAll={false} />
+</main>

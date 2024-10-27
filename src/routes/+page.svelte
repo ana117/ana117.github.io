@@ -12,9 +12,9 @@
 
 <Hero/>
 
-<div id="content" class="min-h-screen">
+<main id="content" class="min-h-screen lg:mx-[5rem] xl:mx-[10rem]">
     <Experiences/>
     <ProjectsList displayCount={4} preview={true}/>
 
     <Contact/>
-</div>
+</main>

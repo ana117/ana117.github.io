@@ -19,30 +19,30 @@
                 </span>
             </p>
 
-            <div class="flex flex-col lg:flex-row flex-wrap justify-center md:justify-between gap-[1rem]">
-                <span class="flex justify-center items-center gap-[0.5rem]">
-                    <img src="/assets/icons/location.svg" alt="location" class="w-[2rem] md:w-[2rem] dark:hidden">
-                    <img src="/assets/icons/location_light.svg" alt="location"class="w-[2rem] md:w-[2rem] hidden dark:block">
+            <div class="">
+                <div class="flex gap-[0.5rem] mb-[1rem]">
                     South Tangerang, Indonesia
-                </span>
-                
-                <div class="flex justify-center gap-[1rem]">
-                    <a href="mailto:anaufan11@gmail.com" target="_blank" class="hover:scale-125 transition duration-500">
-                        <img src="assets/icons/mail.svg" alt="mail" class="w-[2.5rem] dark:hidden">
-                        <img src="assets/icons/mail_light.svg" alt="mail" class="w-[2.5rem] hidden dark:block">
-                    </a>
-                    <a href="https://www.linkedin.com/in/ahmadnaufanw/" target="_blank" class="hover:scale-125 transition duration-500">
-                        <img src="assets/icons/linkedin.svg" alt="linkedin" class="w-[2.5rem] dark:hidden">
-                        <img src="assets/icons/linkedin_light.svg" alt="linkedin" class="w-[2.5rem] hidden dark:block">
-                    </a>
-                    <a href="https://github.com/ana117" target="_blank" class="hover:scale-125 transition duration-500">
-                        <img src="assets/icons/github.svg" alt="github" class="w-[2.5rem] dark:hidden">
-                        <img src="assets/icons/github_light.svg" alt="github" class="w-[2.5rem] hidden dark:block">
-                    </a>
-                    
-                    <a href={Resume} download="Resume_AhmadNaufanW" target="_blank" class="hover:scale-125 transition duration-500">
-                        <img src="assets/icons/cv.svg" alt="cv" class="w-[2.5rem] dark:hidden">
-                        <img src="assets/icons/cv_light.svg" alt="cv" class="w-[2.5rem] hidden dark:block">
+                </div>
+                <div class="flex justify-between items-center gap-[1rem]">
+                    <div class="flex justify-center gap-[1rem]">
+                        <a href="mailto:anaufan11@gmail.com" target="_blank" class="hover:scale-125 transition duration-500">
+                            <img src="assets/icons/mail.svg" alt="mail" class="w-[2.5rem] dark:hidden">
+                            <img src="assets/icons/mail_light.svg" alt="mail" class="w-[2.5rem] hidden dark:block">
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmadnaufanw/" target="_blank" class="hover:scale-125 transition duration-500">
+                            <img src="assets/icons/linkedin.svg" alt="linkedin" class="w-[2.5rem] dark:hidden">
+                            <img src="assets/icons/linkedin_light.svg" alt="linkedin" class="w-[2.5rem] hidden dark:block">
+                        </a>
+                        <a href="https://github.com/ana117" target="_blank" class="hover:scale-125 transition duration-500">
+                            <img src="assets/icons/github.svg" alt="github" class="w-[2.5rem] dark:hidden">
+                            <img src="assets/icons/github_light.svg" alt="github" class="w-[2.5rem] hidden dark:block">
+                        </a>
+                        
+                    </div>
+                    <a href={Resume} download="Resume_AhmadNaufanW" target="_blank" class="flex items-center justify-between gap-x-[2rem] hover:scale-105 transition duration-500 rounded-lg border p-2 bg-primary dark:bg-secondary text-secondary dark:text-primary">
+                        <span class="font-bold">Resume</span>
+                        <img src="assets/icons/cv.svg" alt="cv" class="w-[1.5rem] hidden dark:block">
+                        <img src="assets/icons/cv_light.svg" alt="cv" class="w-[1.5rem] dark:hidden">
                     </a>
                 </div>
             </div>
