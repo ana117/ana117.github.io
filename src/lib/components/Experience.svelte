@@ -41,6 +41,7 @@
             </div>
         </div>
     </div>
+    {#if experience.details}
     <button type="button" on:click={() => clickHandler()} class="w-fit underline underline-offset-4 decoration-accent dark:decoration-secondary hover:bg-accent hover:text-white hover:dark:bg-secondary hover:dark:text-black duration-500 transition-all origin-bottom" aria-expanded={showDetails}>
         {showDetails ? "Hide" : "Show"} Details
     </button>
@@ -50,5 +51,6 @@
         <li>{detail}</li>
         {/each}
     </ul>
+    {/if}
     {/if}
 </div>
