@@ -1,5 +1,12 @@
 const experiences = [
     {
+        title: 'Backend Engineer',
+        company: 'GoApp',
+        location: 'Indonesia',
+        date: 'October 2024 - Present',
+        type: 'Full-time',
+    },
+    {
         title: 'Full Stack Web Developer',
         company: 'FutureView.app',
         url: 'https://futureview.app',
