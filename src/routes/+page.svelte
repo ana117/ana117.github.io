@@ -12,7 +12,7 @@
 
 <Hero/>
 
-<main id="content" class="min-h-screen lg:mx-[5rem] xl:mx-[10rem]">
+<main id="content" class="min-h-screen lg:*:px-[5rem] xl:*:px-[10rem]">
     <Experiences/>
     <ProjectsList displayCount={4} preview={true}/>
 
