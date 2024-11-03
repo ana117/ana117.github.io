@@ -4,11 +4,11 @@
     export let project, title, summary, points, techStacks, github, website;
 
     const handleImageFallback = (e: Event) => {
-        (e.target as HTMLImageElement).src = 'https://placehold.co/600x400';
+        (e.target as HTMLImageElement).src = '/assets/icons/objects/placeholder.svg';
     }
     
     const handleIconFallback = (e: Event) => {
-        (e.target as HTMLImageElement).src = '/assets/icons/question_mark.svg';
+        (e.target as HTMLImageElement).src = '/assets/icons/objects/question_mark.svg';
     }
 </script>
 
@@ -23,7 +23,7 @@
                 {#each techStacks as techStack}
                     <div class="flex">
                         <div class="relative group/tech">
-                            <img src="/assets/icons/{techStack}.svg" alt="{techStack}"
+                            <img src="/assets/icons/techs/{techStack}.svg" alt="{techStack}"
                                     class="w-[4rem] lg:w-[3rem] z-0" on:error={handleIconFallback}>
                             <div class="bg-primary text-white rounded-md px-[0.5rem]
                                         absolute top-0 left-16 h-full z-10

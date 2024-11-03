@@ -10,15 +10,15 @@
             <a href="https://github.com/ana117" target="_blank"
                class="flex items-center gap-x-[0.5rem]
                       hover:underline underline-offset-4 decoration-accent dark:decoration-secondary">
-                <img src="assets/icons/github.svg" alt="github" class="w-[3rem] md:w-[2.5rem] dark:hidden">
-                <img src="assets/icons/github_light.svg" alt="github" class="w-[3rem] md:w-[2.5rem] hidden dark:block">
+                <img src="assets/icons/socials/github.svg" alt="github" class="w-[3rem] md:w-[2.5rem] dark:hidden">
+                <img src="assets/icons/socials/github_light.svg" alt="github" class="w-[3rem] md:w-[2.5rem] hidden dark:block">
                 <p>ana117</p>
             </a>
             <a href="https://www.linkedin.com/in/ahmadnaufanw/" target="_blank"
                class="flex items-center gap-x-[0.5rem]
                       hover:underline underline-offset-4 decoration-accent dark:decoration-secondary">
-                <img src="assets/icons/linkedin.svg" alt="linkedin" class="w-[3rem] md:w-[2.5rem] dark:hidden">
-                <img src="assets/icons/linkedin_light.svg" alt="linkedin"
+                <img src="assets/icons/socials/linkedin.svg" alt="linkedin" class="w-[3rem] md:w-[2.5rem] dark:hidden">
+                <img src="assets/icons/socials/linkedin_light.svg" alt="linkedin"
                      class="w-[3rem] md:w-[2.5rem] hidden dark:block">
                 <p>anaufanw</p>
             </a>
