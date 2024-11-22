@@ -1,8 +1,21 @@
 <script lang="ts">
+    import { browser } from '$app/environment';
+
+    let darkMode = true;
     function toggleDarkMode() {
-        const html = document.querySelector('html');
-        if (html) {
-            html.classList.toggle('dark');
+        document.documentElement.classList.toggle('dark');
+        darkMode = !darkMode;
+        localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+    }
+
+    if (browser) {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            darkMode = true;
+        } else {
+            document.documentElement.classList.remove('dark');
+            darkMode = false;
         }
     }
 </script>
