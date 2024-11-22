@@ -1,21 +1,18 @@
 <script lang="ts">
     import Link from "./Link.svelte";
     import type { Project as ProjectType } from "$lib/types";
+    import TooltipIcon from "./TooltipIcon.svelte";
 
     export let project: ProjectType;
 
-    const { id, title, description, techStacks, github, website } = project;
+    const { id, title, techStacks, github, website } = project;
 
     const handleImageFallback = (e: Event) => {
         (e.target as HTMLImageElement).src = '/assets/icons/objects/placeholder.svg';
     }
-    
-    const handleIconFallback = (e: Event) => {
-        (e.target as HTMLImageElement).src = '/assets/icons/objects/question_mark.svg';
-    }
 </script>
 
-<div class="w-fit rounded-xl shadow-lg bg-secondary dark:bg-accent text-white border-2 border-transparent hover:border-accent duration-500 transition-all group" id="{id}">
+<div class="w-fit rounded-xl shadow-lg bg-secondary dark:bg-accent text-white border-2 border-transparent hover:border-accent duration-500 transition-all group hover:scale-105" id="{id}">
     <div class="relative">
         <a href="/projects/#{id}" class="w-full relative z-0">
             <picture>
@@ -29,26 +26,14 @@
         </a>
     </div>
 
-    <div class="flex flex-wrap justify-between items-center p-[1rem]">
+    <div class="flex flex-wrap justify-between items-center p-[1rem] gap-[1rem]">
         <div class="flex gap-[1rem] z-0">
             {#each techStacks as techStack}
-                <div class="flex">
-                    <div class="relative group/tech">
-                        <img src="/assets/icons/techs/{techStack}.svg" alt="{techStack}"
-                                class="w-[4rem] lg:w-[3rem] z-0" on:error={handleIconFallback}>
-                        <div class="bg-primary text-white rounded-md px-[0.5rem]
-                                    absolute top-0 left-16 h-full z-10
-                                    hidden group-hover/tech:lg:flex items-center">
-                            <p class="text-xl font-semibold px-[0.5rem]">
-                                {techStack}
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <TooltipIcon imageUri="/assets/icons/techs/{techStack}.svg" alt="{techStack}" tooltip="{techStack}" />
             {/each}
         </div>
 
-        <div class="flex gap-[1rem] text-xl text-primary dark:text-white">
+        <div class="flex gap-[1rem] text-lg md:text-xl text-primary dark:text-white">
             {#if github}
                 <Link text="GitHub" rel={github} />
             {/if}

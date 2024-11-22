@@ -1,6 +1,7 @@
 <script lang="ts">
     import Link from "./Link.svelte";
     import type { Project as ProjectType } from "$lib/types";
+    import TooltipIcon from "./TooltipIcon.svelte";
 
     export let project: ProjectType;
 
@@ -8,10 +9,6 @@
 
     const handleImageFallback = (e: Event) => {
         (e.target as HTMLImageElement).src = '/assets/icons/objects/placeholder.svg';
-    }
-    
-    const handleIconFallback = (e: Event) => {
-        (e.target as HTMLImageElement).src = '/assets/icons/objects/question_mark.svg';
     }
 </script>
 
@@ -21,26 +18,14 @@
             <img class="md:min-w-[640px] w-full h-[360px] rounded-t-xl xl:rounded-tr-none object-cover object-top" src="/assets/{id}/{id}-1.webp" alt="{id}" on:error={handleImageFallback}>
         </picture>
     
-        <div class="flex flex-wrap justify-between items-center p-[1rem]">
+        <div class="flex flex-wrap justify-between items-center p-[1rem] gap-[1rem]">
             <div class="flex gap-[1rem] z-0">
                 {#each techStacks as techStack}
-                    <div class="flex">
-                        <div class="relative group/tech">
-                            <img src="/assets/icons/techs/{techStack}.svg" alt="{techStack}"
-                                    class="w-[4rem] lg:w-[3rem] z-0" on:error={handleIconFallback}>
-                            <div class="bg-primary text-white rounded-md px-[0.5rem]
-                                        absolute top-0 left-16 h-full z-10
-                                        hidden group-hover/tech:lg:flex items-center">
-                                <p class="text-xl font-semibold px-[0.5rem]">
-                                    {techStack}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <TooltipIcon imageUri="/assets/icons/techs/{techStack}.svg" alt="{techStack}" tooltip="{techStack}" />
                 {/each}
             </div>
 
-            <div class="flex gap-[1rem] text-xl text-primary dark:text-white">
+            <div class="flex gap-[1rem] text-lg md:text-xl text-primary dark:text-white">
                 {#if github}
                     <Link text="GitHub" rel={github} />
                 {/if}

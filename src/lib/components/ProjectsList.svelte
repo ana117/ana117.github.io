@@ -75,7 +75,7 @@
             </div>
         </div>
         
-        <div class="flex flex-wrap justify-center gap-x-[2rem] gap-y-[4rem]">
+        <div class="flex flex-wrap justify-center gap-x-[1.5rem] gap-y-[4rem]">
             {#each filteredProjects.slice(0, displayCount) as project}
                 {#if preview}
                     <ProjectPreview project={project} 
