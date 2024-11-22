@@ -1,14 +1,8 @@
 <script lang="ts">
     import { slide } from "svelte/transition";
-    export let experience: {
-        title: string;
-        company: string;
-        url?: string;
-        location: string;
-        date: string;
-        type?: string;
-        details: string[];
-    };
+    import type { Experience } from "$lib/types";
+
+    export let experience: Experience;
 
     let showDetails = false;
     function clickHandler() {

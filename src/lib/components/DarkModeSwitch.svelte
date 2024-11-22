@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
     function toggleDarkMode() {
         const html = document.querySelector('html');
-        html.classList.toggle('dark');
+        if (html) {
+            html.classList.toggle('dark');
+        }
     }
 </script>
 

@@ -78,23 +78,10 @@
         <div class="flex flex-wrap justify-center gap-x-[2rem] gap-y-[4rem]">
             {#each filteredProjects.slice(0, displayCount) as project}
                 {#if preview}
-                    <ProjectPreview
-                        project={project.project}
-                        title={project.title}
-                        techStacks={project.techStacks}
-                        github={project.github}
-                        website={project.website}
+                    <ProjectPreview project={project} 
                     />
                 {:else}
-                    <Project
-                        project={project.project}
-                        title={project.title}
-                        summary={project.description.summary}
-                        points={project.description.points}
-                        techStacks={project.techStacks}
-                        github={project.github}
-                        website={project.website}
-                    />
+                    <Project project={project} />
                 {/if}
             {/each}
         </div>

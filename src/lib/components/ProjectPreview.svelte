@@ -1,7 +1,10 @@
 <script lang="ts">
     import Link from "./Link.svelte";
+    import type { Project as ProjectType } from "$lib/types";
 
-    export let project, title, techStacks, github, website;
+    export let project: ProjectType;
+
+    const { id, title, description, techStacks, github, website } = project;
 
     const handleImageFallback = (e: Event) => {
         (e.target as HTMLImageElement).src = '/assets/icons/objects/placeholder.svg';
@@ -12,11 +15,11 @@
     }
 </script>
 
-<div class="w-fit rounded-xl shadow-lg bg-secondary dark:bg-accent text-white border-2 border-transparent hover:border-accent duration-500 transition-all group" id="{project}">
+<div class="w-fit rounded-xl shadow-lg bg-secondary dark:bg-accent text-white border-2 border-transparent hover:border-accent duration-500 transition-all group" id="{id}">
     <div class="relative">
-        <a href="/projects/#{project}" class="w-full relative z-0">
+        <a href="/projects/#{id}" class="w-full relative z-0">
             <picture>
-                <img class="w-[400px] h-[200px]  rounded-t-xl object-cover object-top" src="/assets/{project}/{project}-1.webp" alt="{project}" on:error={handleImageFallback}>
+                <img class="w-[400px] h-[200px]  rounded-t-xl object-cover object-top" src="/assets/{id}/{id}-1.webp" alt="{id}" on:error={handleImageFallback}>
             </picture>
             <div class="hidden group-hover:flex flex-col items-center justify-center absolute top-0 left-0 h-full w-full backdrop-blur-sm rounded-t-xl">
                 <p class="bg-secondary dark:bg-accent text-black dark:text-white p-[1rem] text-2xl font-bold mt-auto rounded-t-lg">

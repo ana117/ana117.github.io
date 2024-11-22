@@ -1,4 +1,6 @@
-const experiences = [
+import type { Experience } from "$lib/types";
+
+const experiences: Experience[] = [
     {
         title: 'Backend Engineer',
         company: 'GoApp',
@@ -21,6 +23,6 @@ const experiences = [
             "Created automated scripts to update and populate the database from spreadsheet data, reducing the time needed to make frequent changes based on user feedback"
         ],
     },
-]
+];
 
 export default experiences;

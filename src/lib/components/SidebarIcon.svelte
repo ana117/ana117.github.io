@@ -1,5 +1,6 @@
 <script lang="ts">
-    export let icon, alt : string;
+    export let icon : string;
+    export let alt : string = "";
     export let href : string = "";
     export let tooltip : string = "";
     export let customClass : string = "";
