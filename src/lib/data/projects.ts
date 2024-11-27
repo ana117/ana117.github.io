@@ -27,19 +27,17 @@ const projects: Project[] = [
     description: {
       summary: "Korean-English dictionary web app using Korean Dictionary API",
       points: [
-        "Developed a Korean dictionary website using ReactJS that utilizes KRDict API",
-        "Implemented a Flask proxy server to bypass CORS restrictions",
+        "Developed a Korean dictionary website using SvelteKit that utilizes KRDict API",
         "Designed a simple user-friendly interface with a search bar and an on-screen Korean idboard for inputting Korean words",
         "Enabled the app to function as a dictionary for Korean input and a translator for English input, displaying results in a card format"
       ]
     },
     techStacks: [
-      "react",
-      "python",
+      "sveltekit",
       "tailwind"
     ],
     github: "https://github.com/ana117/korean-dictionary",
-    website: "https://ana117.github.io/korean-dictionary/"
+    website: "https://korean-dictionary-ana117.vercel.app//"
   },
 
   {
@@ -73,7 +71,7 @@ const projects: Project[] = [
       ]
     },
     techStacks: [
-      "react",
+      "nextjs",
       "tailwind"
     ],
     github: "https://github.com/ana117/web-games",
