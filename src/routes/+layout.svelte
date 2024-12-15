@@ -5,6 +5,10 @@
     import NavbarMobile from "$lib/components/NavbarMobile.svelte";
 </script>
 
+<svelte:head>
+    <link rel="canonical" href="https://www.ana117.com/"/>
+</svelte:head>
+
 <Navbar/>
 <NavbarMobile/>
 
