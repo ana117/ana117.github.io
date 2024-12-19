@@ -1,7 +1,3 @@
-<script>
-    import Resume from '$lib/data/Resume_AhmadNaufanW.pdf';
-</script>
-
 <section id="hero" class="flex flex-col justify-center items-center py-[1rem] h-screen bg-secondary dark:bg-accent">
     <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-[4rem] grow relative z-0 px-[1rem] lg:px-[4rem] text-primary dark:text-secondary">
         <img src="/assets/icons/objects/logo.svg" alt="logo" class="w-[16rem] xl:w-[32rem] dark:hidden">
@@ -39,7 +35,7 @@
                         </a>
                         
                     </div>
-                    <a href={Resume} download="Resume_AhmadNaufanW" target="_blank" class="flex items-center justify-between gap-x-[2rem] hover:scale-105 transition duration-500 rounded-lg border p-2 bg-primary dark:bg-secondary text-secondary dark:text-primary">
+                    <a href="assets/files/Resume_AhmadNaufanW.pdf" target="_blank" class="flex items-center justify-between gap-x-[2rem] hover:scale-105 transition duration-500 rounded-lg border p-2 bg-primary dark:bg-secondary text-secondary dark:text-primary">
                         <span class="font-bold">Resume</span>
                         <img src="assets/icons/objects/cv.svg" alt="cv" class="w-[1.5rem] hidden dark:block">
                         <img src="assets/icons/objects/cv_light.svg" alt="cv" class="w-[1.5rem] dark:hidden">
