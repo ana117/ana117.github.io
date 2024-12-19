@@ -25,7 +25,7 @@
                 </div>
                 <div class="flex justify-between items-center gap-[1rem]">
                     <div class="flex justify-center gap-[1rem]">
-                        <a href="mailto:anaufan11@gmail.com" target="_blank" class="hover:scale-125 transition duration-500">
+                        <a href="mailto:work@ana117.com" target="_blank" class="hover:scale-125 transition duration-500">
                             <img src="assets/icons/objects/mail.svg" alt="mail" class="w-[2.5rem] dark:hidden">
                             <img src="assets/icons/objects/mail_light.svg" alt="mail" class="w-[2.5rem] hidden dark:block">
                         </a>

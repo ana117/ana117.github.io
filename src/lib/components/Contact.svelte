@@ -28,7 +28,7 @@
             <p class="text-text text-2xl">
                 Feel free to contact me through my email below!
             </p>
-            <a href="mailto:anaufan11@gmail.com"
+            <a href="mailto:work@ana117.com"
                class="w-fit py-[0.5rem] px-[1rem] rounded
                       text-secondary font-bold text-2xl
                       hover:underline underline-offset-4 decoration-bg
