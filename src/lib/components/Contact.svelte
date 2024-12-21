@@ -1,3 +1,30 @@
+<script lang="ts">
+    import { onMount } from 'svelte';
+    
+    let used = false;
+    onMount(() => {
+        const mail = document.querySelector('#contact-mail');
+
+        const parse = () => {
+            if (used) return;
+            used = true;
+            const mailAddress = mail.getAttribute('href').split('').map(c => c.charCodeAt(0) >= 33 && c.charCodeAt(0) <= 126 ? String.fromCharCode(33 + ((c.charCodeAt(0) + 14) % 94)) : c).join('');
+            mail.setAttribute('href', mailAddress);
+        }
+
+        const timeout = setTimeout(parse, 5000);
+        const trigger = () => {
+            clearTimeout(timeout);
+            parse();
+            window.removeEventListener('click', trigger);
+            window.removeEventListener('scroll', trigger);
+        }
+
+        window.addEventListener('click', trigger);
+        window.addEventListener('scroll', trigger);
+    });
+</script>
+
 <section id="contact"
          class="p-[1rem] md:px-[4rem] md:py-[2rem] divide-y-4 divide-accent
                 dark:bg-black dark:text-secondary dark:divide-secondary">
@@ -28,7 +55,8 @@
             <p class="text-text text-2xl">
                 Feel free to contact me through my email below!
             </p>
-            <a href="mailto:work@ana117.com"
+            <a href=">2:=E@iH@C<o2?2``f]4@>"
+               id="contact-mail"
                class="w-fit py-[0.5rem] px-[1rem] rounded
                       text-secondary font-bold text-2xl
                       hover:underline underline-offset-4 decoration-bg
