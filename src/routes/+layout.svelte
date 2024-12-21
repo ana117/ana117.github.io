@@ -13,7 +13,7 @@
 <NavbarMobile/>
 
 <div class="flex flex-col min-h-screen">
-    <div class="md:ml-[8rem] dark:bg-black grow">
+    <div class="md:ml-[8rem] dark:bg-black flex flex-col grow">
         <slot/>
     </div>
     <Footer/>
