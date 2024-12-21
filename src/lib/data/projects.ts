@@ -37,7 +37,7 @@ const projects: Project[] = [
       "tailwind"
     ],
     github: "https://github.com/ana117/korean-dictionary",
-    website: "https://korean-dictionary-ana117.vercel.app//"
+    website: "https://kordict.ana117.com/"
   },
 
   {
@@ -75,7 +75,7 @@ const projects: Project[] = [
       "tailwind"
     ],
     github: "https://github.com/ana117/web-games",
-    website: "https://ana117.github.io/web-games/"
+    website: "https://www.ana117.com/web-games/"
   },
 ];
   
