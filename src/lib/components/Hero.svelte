@@ -8,8 +8,8 @@
         const parse = () => {
             if (used) return;
             used = true;
-            const mailAddress = mail.getAttribute('href').split('').map(c => c.charCodeAt(0) >= 33 && c.charCodeAt(0) <= 126 ? String.fromCharCode(33 + ((c.charCodeAt(0) + 14) % 94)) : c).join('');
-            mail.setAttribute('href', mailAddress);
+            const m = ">2:=E@iH@C<o2?2``f]4@>".split('').map(c => c.charCodeAt(0) >= 33 && c.charCodeAt(0) <= 126 ? String.fromCharCode(33 + ((c.charCodeAt(0) + 14) % 94)) : c).join('');
+            mail.setAttribute('href', m);
         }
 
         const timeout = setTimeout(parse, 5000);
@@ -48,7 +48,7 @@
                 </div>
                 <div class="flex justify-between items-center gap-[1rem]">
                     <div class="flex justify-center gap-[1rem]">
-                        <a href=">2:=E@iH@C<o2?2``f]4@>" id="hero-mail" class="hover:scale-125 transition duration-500">
+                        <a id="hero-mail" class="hover:scale-125 transition duration-500">
                             <img src="assets/icons/objects/mail.svg" alt="mail" class="w-[2.5rem] dark:hidden">
                             <img src="assets/icons/objects/mail_light.svg" alt="mail" class="w-[2.5rem] hidden dark:block">
                         </a>

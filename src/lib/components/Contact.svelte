@@ -8,8 +8,8 @@
         const parse = () => {
             if (used) return;
             used = true;
-            const mailAddress = mail.getAttribute('href').split('').map(c => c.charCodeAt(0) >= 33 && c.charCodeAt(0) <= 126 ? String.fromCharCode(33 + ((c.charCodeAt(0) + 14) % 94)) : c).join('');
-            mail.setAttribute('href', mailAddress);
+            const m = ">2:=E@iH@C<o2?2``f]4@>".split('').map(c => c.charCodeAt(0) >= 33 && c.charCodeAt(0) <= 126 ? String.fromCharCode(33 + ((c.charCodeAt(0) + 14) % 94)) : c).join('');
+            mail.setAttribute('href', m);
         }
 
         const timeout = setTimeout(parse, 5000);
@@ -55,8 +55,7 @@
             <p class="text-text text-2xl">
                 Feel free to contact me through my email below!
             </p>
-            <a href=">2:=E@iH@C<o2?2``f]4@>"
-               id="contact-mail"
+            <a id="contact-mail"
                class="w-fit py-[0.5rem] px-[1rem] rounded
                       text-secondary font-bold text-2xl
                       hover:underline underline-offset-4 decoration-bg
