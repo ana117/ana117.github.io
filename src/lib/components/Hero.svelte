@@ -4,6 +4,7 @@
     let used = false;
     onMount(() => {
         const mail = document.querySelector('#hero-mail');
+        if (!mail) return;
 
         const parse = () => {
             if (used) return;
