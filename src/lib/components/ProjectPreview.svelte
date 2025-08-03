@@ -14,7 +14,7 @@
 
 <div class="w-fit rounded-xl shadow-lg bg-secondary dark:bg-accent text-white border-2 border-transparent hover:border-accent duration-500 transition-all group hover:scale-105" id="{id}">
     <div class="relative">
-        <a href="/projects/#{id}" class="w-full relative z-0">
+        <a href="/projects/#{id}" class="w-full relative z-0 block">
             <picture>
                 <img class="w-[400px] h-[200px]  rounded-t-xl object-cover object-top" src="/assets/{id}/{id}-1.webp" alt="{id}" on:error={handleImageFallback}>
             </picture>
