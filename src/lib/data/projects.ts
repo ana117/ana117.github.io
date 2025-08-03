@@ -46,8 +46,9 @@ const projects: Project[] = [
     description: {
       summary: "Mobile app to push notification from your phone to your computer",
       points: [
-        "Developed a mobile app that allows users to send notifications from their phone to their computer",
-        "Implemented a simple user interface with a text input field and a button to send notifications",
+        "Developed a mobile app that allows users to send notifications from their phone to their computer via a REST API",
+        "Implemented a simple mobile interface with a customizable server URL",
+        "Created a REST API server using Go that handles incoming notifications and sends them to the user's computer as an alert",
       ]
     },
     techStacks: [
