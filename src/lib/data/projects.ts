@@ -41,21 +41,20 @@ const projects: Project[] = [
   },
 
   {
-    id: "go-chat",
-    title: "GoChat",
+    id: "pushover",
+    title: "Pushover",
     description: {
-      summary: "A simple real-time chat application using Go and WebSockets",
+      summary: "Mobile app to push notification from your phone to your computer",
       points: [
-        "Developed a real-time chat web app using Golang and WebSockets",
-        "Implemented multiple room functionality where users can pick an available room and choose their own username",
-        "Designed an interactive chat room interface with real-time messaging"
+        "Developed a mobile app that allows users to send notifications from their phone to their computer",
+        "Implemented a simple user interface with a text input field and a button to send notifications",
       ]
     },
     techStacks: [
-      "go",
-      "tailwind"
+      "android",
+      "go"
     ],
-    github: "https://github.com/ana117/go-chat"
+    github: "https://github.com/ana117/pushover-android"
   },
 
   {
@@ -76,6 +75,24 @@ const projects: Project[] = [
     ],
     github: "https://github.com/ana117/web-games",
     website: "https://www.ana117.com/web-games/"
+  },
+
+  {
+    id: "go-chat",
+    title: "GoChat",
+    description: {
+      summary: "A simple real-time chat application using Go and WebSockets",
+      points: [
+        "Developed a real-time chat web app using Golang and WebSockets",
+        "Implemented multiple room functionality where users can pick an available room and choose their own username",
+        "Designed an interactive chat room interface with real-time messaging"
+      ]
+    },
+    techStacks: [
+      "go",
+      "tailwind"
+    ],
+    github: "https://github.com/ana117/go-chat"
   },
 ];
   
