@@ -1,6 +1,6 @@
 <script>
     import Hero from "$lib/components/Hero.svelte";
-    import ProjectsList from "$lib/components/ProjectsList.svelte";
+    import Projects from "$lib/components/Projects.svelte";
     import Contact from "$lib/components/Contact.svelte";
     import Experiences from "$lib/components/Experiences.svelte";
 </script>
@@ -14,7 +14,7 @@
 
 <main id="content" class="min-h-screen lg:*:px-[5rem] xl:*:px-[10rem]">
     <Experiences/>
-    <ProjectsList displayCount={4} preview={true}/>
+    <Projects displayCount={4} preview={true}/>
 
     <Contact/>
 </main>

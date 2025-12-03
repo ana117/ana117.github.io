@@ -1,5 +1,5 @@
 <script>
-    import ProjectsList from "$lib/components/ProjectsList.svelte";
+    import Projects from "$lib/components/Projects.svelte";
 </script>
 
 <svelte:head>
@@ -7,5 +7,5 @@
 </svelte:head>
 
 <main class="lg:*:px-[5rem] xl:*:px-[10rem]">
-    <ProjectsList showViewAll={false} />
+    <Projects showViewAll={false} />
 </main>
