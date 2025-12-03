@@ -35,6 +35,15 @@
             </div>
         </div>
     </div>
+
+    {#if experience.skills}
+    <div class="flex flex-wrap gap-[0.5rem] text-sm">
+        {#each experience.skills as skill}
+        <span class="bg-primary text-white py-[0.125rem] px-[0.5rem] rounded">{skill.toLowerCase()}</span>
+        {/each}
+    </div>
+    {/if}
+
     {#if experience.details}
     <button type="button" on:click={() => clickHandler()} class="w-fit underline underline-offset-4 decoration-accent dark:decoration-secondary hover:bg-accent hover:text-white hover:dark:bg-secondary hover:dark:text-black duration-500 transition-all origin-bottom" aria-expanded={showDetails}>
         {showDetails ? "Hide" : "Show"} Details

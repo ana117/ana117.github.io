@@ -8,6 +8,7 @@ const experiences: Experience[] = [
         location: 'Indonesia',
         date: 'October 2024 - Present',
         type: 'Full-time',
+        skills: ['Python', 'Django', 'Docker']
     },
 ];
 
