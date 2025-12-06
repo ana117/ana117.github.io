@@ -13,9 +13,18 @@
         if (theme === 'dark') {
             document.documentElement.classList.add('dark');
             darkMode = true;
-        } else {
+        } else if (theme === 'light') {
             document.documentElement.classList.remove('dark');
             darkMode = false;
+        } else {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (prefersDark) {
+                document.documentElement.classList.add('dark');
+                darkMode = true;
+            } else {
+                document.documentElement.classList.remove('dark');
+                darkMode = false;
+            }
         }
     }
 </script>
