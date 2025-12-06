@@ -49,7 +49,7 @@
         {#if showViewAll}
             <a href="/projects"
                class="italic text-xl hover:underline underline-offset-4 decoration-accent dark:decoration-secondary">
-                View All <span class="text-3xl">&#8594;</span>
+                View All ({projects.length}) <span class="text-3xl">&#8594;</span>
             </a>
         {/if}
     </header>
