@@ -37,13 +37,13 @@
                 <span class="lg:whitespace-nowrap">I'm Ahmad Naufan W</span>
             </h1>
             <p class="text-xl text-center lg:text-start">
-                Full Stack Developer 
+                Backend Developer 
                 <span class="hidden lg:inline">
                     • Bachelor of Computer Science from University of Indonesia
                 </span>
             </p>
 
-            <div class="">
+            <div>
                 <div class="flex gap-[0.5rem] mb-[1rem]">
                     South Tangerang, Indonesia
                 </div>
@@ -69,6 +69,12 @@
                         <img src="assets/icons/objects/cv_light.svg" alt="cv" class="w-[1.5rem] dark:hidden">
                     </a>
                 </div>
+            </div>
+
+            <div>
+                <a href="#contact" class="lg:text-xl italic w-fit dark:decoration-secondary decoration-accent underline-offset-8 underline dark:hover:bg-secondary dark:hover:text-primary hover:bg-accent hover:text-secondary">
+                    Open for freelancing
+                </a>
             </div>
         </div>
     </div>
