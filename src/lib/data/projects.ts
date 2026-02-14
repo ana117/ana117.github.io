@@ -41,21 +41,21 @@ const projects: Project[] = [
   },
 
   {
-    id: "pushover",
-    title: "Pushover",
+    id: "godrop",
+    title: "GoDrop",
     description: {
-      summary: "Mobile app to push notification from your phone to your computer",
+      summary: "Local peer-to-peer file sharing web app using Golang and WebSocket",
       points: [
-        "Developed a mobile app that allows users to send notifications from their phone to their computer via a REST API",
-        "Implemented a simple mobile interface with a customizable server URL",
-        "Created a REST API server using Go that handles incoming notifications and sends them to the user's computer as an alert",
+        "Implemented local peer-to-peer file sharing using Go and WebSockets to transfer files directly between devices without central storage",
+        "Added temporary video sharing: uploads are stored on the server filesystem for quick local streaming",
       ]
     },
     techStacks: [
-      "android",
-      "go"
+      "go",
+      "websocket",
+      "tailwind"
     ],
-    github: "https://github.com/ana117/pushover-android"
+    github: "https://github.com/ana117/godrop"
   },
 
   {
@@ -79,6 +79,24 @@ const projects: Project[] = [
   },
 
   {
+    id: "pushover",
+    title: "Pushover",
+    description: {
+      summary: "Mobile app to push notification from your phone to your computer",
+      points: [
+        "Developed a mobile app that allows users to send notifications from their phone to their computer via a REST API",
+        "Implemented a simple mobile interface with a customizable server URL",
+        "Created a REST API server using Go that handles incoming notifications and sends them to the user's computer as an alert",
+      ]
+    },
+    techStacks: [
+      "android",
+      "go"
+    ],
+    github: "https://github.com/ana117/pushover-android"
+  },
+
+  {
     id: "go-chat",
     title: "GoChat",
     description: {
@@ -91,6 +109,7 @@ const projects: Project[] = [
     },
     techStacks: [
       "go",
+      "websocket",
       "tailwind"
     ],
     github: "https://github.com/ana117/go-chat"
